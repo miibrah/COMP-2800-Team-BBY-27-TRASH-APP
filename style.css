@@ -12,7 +12,7 @@ body {
 }
 
 #palette {
-background: rgb(165,190,0);
+	background: rgb(165,190,0);
 background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100%, rgba(5,102,141,1) 100%);
 }
 
@@ -42,7 +42,7 @@ background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
-  background-color:rgb(76, 85, 15);
+  background-color:rgb(70, 78, 17);
   bottom:0;
   left: 0;
   right: 0;
@@ -92,7 +92,7 @@ background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100
 }
 
 .footer-dark .item.text p {
-  opacity:0.6;
+  opacity:0.7;
   margin-bottom:0;
 }
 
@@ -105,24 +105,6 @@ background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100
     text-align:center;
     margin-top:20px;
   }
-}
-
-.footer-dark .item.social > a {
-  font-size:20px;
-  width:36px;
-  height:36px;
-  line-height:36px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-  margin:0 8px;
-  color:#fff;
-  opacity:0.75;
-}
-
-.footer-dark .item.social > a:hover {
-  opacity:0.9;
 }
 
 .footer-dark .copyright {
