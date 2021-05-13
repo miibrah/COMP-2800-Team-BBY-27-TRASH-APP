@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 body {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -23,7 +25,6 @@ background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100
 .navbar span {
 	color: yellow;
 }
-
 
  .nav {
       position: fixed;
@@ -111,7 +112,7 @@ background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100
   margin-top: -50px;
 }
 
-h1 {
+/* h1 {
   margin-top: 10px;
   color: #84d1df;
   font-style: italic;
@@ -127,4 +128,111 @@ h2 {
 h3 {
   font-size: 1em;
   margin-top:20px;
+} */
+
+.grid {
+	width: auto;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 25em 5em 5em;
 }
+
+#circlebackground {
+	width: 375px;
+	height: 375px;
+	border-radius: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+
+#row3 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(http://assets.stickpng.com/thumbs/5c41d465e39d5d01c21da916.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#row1 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(https://www.pngkit.com/png/detail/177-1779995_recycling-symbol-cartoon.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#row2 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(https://bucknellian.net/wp-content/uploads/2017/04/Compost-Color-900x732.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.row1_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.hover_recycle {
+  color: white;
+  text-decoration: none;
+}
+
+.hover_recycle:hover {
+  color: rgb(53, 34, 34);
+  text-decoration: none;
+}
+
+.row2_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row3_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 991.98px) { 
+  #row3 {
+    height: 25vh;
+  }
+  #row2 {
+    height: 25vh;
+  }
+  #row1 {
+    height: 25vh;
+  }
+ }
