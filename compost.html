@@ -2,140 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Compost</title>
-    <!-- Bootstrap for Mobile-first, and JQuery -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>Composting</title>
+  <!-- Bootstrap for Mobile-first, and JQuery -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
 
-    <!-- Optional styles and scripts of your own -->
-	<link rel="stylesheet" href="./css/style.css"/>
-    <link rel = "stylesheet" href = "./css/compost.css">
+  <!-- Optional styles and scripts of your own -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/compost.css">
 
 </head>
 
 <body>
 
-    <!-------------------------------------->
-    <!-- The following is HTML for layout -->
-    <!-------------------------------------->
+  <!-------------------------------------->
+  <!-- The following is HTML for layout -->
+  <!-------------------------------------->
 
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
-        <div>
-            <a href="#" class="navbar-brand">
-                <!-- Logo Image -->
-                <img src="./images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
-                <!-- Logo Text -->
-                <span class="text-uppercase font-weight-bold navbar-brand">Trash App</span>
-              </a>
-        </div>
-        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"><span
-                class="navbar-toggler-icon "></span></button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
-                </li>
-                <li class="nav-item">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
-                      </form>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
+    <div>
+      <a href="./landing.html" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="./images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
+        <!-- Logo Text -->
+        <span class="text-uppercase font-weight-bold navbar-brand">Trash App</span>
+      </a>
+    </div>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
+              placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Content -->
+  <!-- Content -->
 
-    <div class="pos-f-t sticky-top" id = "TOC">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-info p-4 anchor-parent">
-            <h4 class="text-white">List of page anchors</h4>
-            
-            <!-- List of anchors; add as many as you want and link them to the appropiate heading by putting id of heading inside anchor href.
+  <div class="pos-f-t sticky-top" id="TOC">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-info p-4 anchor-parent">
+        <h4 class="text-white">List of page anchors</h4>
+
+        <!-- List of anchors; add as many as you want and link them to the appropiate heading by putting id of heading inside anchor href.
             data-toggle and data-target attributes closes navbar menu when anchor is clicked-->
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading1">Name of heading 1</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading2">Name of heading 2</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading3">Name of heading 3</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading4">Name of heading 4</a></div>
-
-
-          </div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading1">Composting Benefits</a>
         </div>
-        <nav class="navbar navbar-dark bg-info">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span style = "color: white;">Table of Contents</span>
-          </button>
-        </nav>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading2">What to Compost</a>
+        </div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading3">How to Compost</a>
+        </div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading4">Waste Wizard Tool</a>
+        </div>
+
+
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span style="color: white;">Table of Contents</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="container">
+    <div id="title">Composting</div>
+    <div id="body">
+
+      <!-- Write heading under <b></b> tags. Content under <p></p> tags -->
+      <!-- When creating new headings, don't forget to insert new id with corresponing identifier. i.e) heading6, heading20, etc -->
+      <br>
+      <br>
+
+      <b id="heading2">Composting Benefits</b>
+      <p>Compost is the single most important supplement you can give your garden. It’s a simple way to add
+        nutrient-rich humus to your lawn or garden that fuels plant growth and restores vitality to depleted soil. It's
+        also free, easy to make, and good for the environment. But composting also has other benefits.
+      </p>
+      <br>
+      <br>
+      <h4>Recycles Kitchen and Yard Waste</h4>
+      <p>
+        Composting can divert as much as 30% of household waste away from the garbage can. That’s important because when
+        organic matter hits the landfill, it lacks the air it needs to decompose quickly. Instead, it creates harmful
+        methane gas as it breaks down, increasing the rate of global warming and climate change.
+      </p>
+      <br>
+      <h4>Introduces Beneficial Organisms to the Soil</h4>
+      <p>
+        Microscopic organisms in compost help aerate the soil, break down organic materials for plant use, and ward off
+        plant disease.
+      </p>
+      <br>
+
+      <h4>Good for the Environment</h4>
+      <p>
+        Composting offers a natural alternative to chemical fertilizers when applied to lawns and garden beds.
+      </p>
+
+      <br>
+      <b id="heading2">What to Compost</b>
+      <p> What you can put into your compost will depend somewhat on what kind of composter you have, but some general
+        rules do apply. All compostable materials are either carbon or nitrogen-based, to varying degrees. The secret to
+        a healthy compost pile is to maintain a working balance between these two elements. Nitrogen or protein-rich
+        matter (manures, food scraps, green lawn clippings, kitchen waste, and green leaves) provides raw materials for
+        making enzymes.
+        A healthy compost pile should have much more carbon than nitrogen. A simple rule of thumb is to use one-third
+        green and two-thirds brown materials. The bulkiness of the brown materials allows oxygen to penetrate and
+        nourish the organisms that reside there. Too much nitrogen makes for a dense, smelly, slowly decomposing
+        anaerobic mass. Good composting hygiene means covering fresh nitrogen-rich material, which can release odors if
+        exposed to open air, with carbon-rich material, which often exudes a fresh, wonderful smell. If in doubt, add
+        more carbon!
+      </p>
+
+      <br>
+
+
+      <b id="heading2">How to Compost</b>
+      <div>
+        <ol>
+          <li><strong>Start your compost pile on bare earth.</strong>
+            This allows worms and other beneficial organisms to aerate the compost and be transported to your garden beds.
+          </li>
+          <li><strong>Lay twigs or straw first,</strong>
+            a few inches deep. This aids drainage and helps aerate the pile.
+          </li>
+          <li><strong>Add compost materials in layers,</strong>
+            alternating moist and dry. Moist ingredients are food scraps, tea bags, seaweed, etc. Dry materials are straw, leaves, sawdust pellets and wood ashes. If you have wood ashes, sprinkle in thin layers, or they will clump together and be slow to break down.
+          </li>
+          <li><strong>Add manure,</strong>
+            green manure (clover, buckwheat, wheatgrass, grass clippings) or any nitrogen source. This activates the compost pile and speeds the process along.
+          </li>
+          <li><strong>Keep compost moist.</strong>
+            Water occasionally, or let rain do the job.
+          </li>
+          <li><strong>Cover</strong>
+            with anything you have – wood, plastic sheeting, carpet scraps. Covering helps retain moisture and heat, two essentials for compost. Covering also prevents the compost from being over-watered by rain. The compost should be moist, but not soaked and sodden.
+          </li>
+          <li><strong>Turn</strong>
+            Every few weeks give the pile a quick turn with a pitchfork or shovel. This aerates the pile. Oxygen is required for the process to work, and turning “adds” oxygen. You can skip this step if you have a ready supply of coarse material like straw. Once you’ve established your compost pile, add new materials by mixing them in, rather than by adding them in layers. Mixing, or turning, the compost pile is key to aerating the composting materials and speeding the process to completion. If you want to buy a composter, rather than build your own compost pile, you may consider a buying a rotating compost tumbler which makes it easy to mix the compost regularly.
+          </li>
+        </ol>
+        <div class="text-center">
+          <img src="https://cdn.shortpixel.ai/client/to_avif,q_lossless,ret_img,w_800/https://learn.eartheasy.com/site-files/2017/11/autumn-composting-tips3.jpg" class="rounded img-gluid" alt="composting image" id="img-compost">
+        </div>
       </div>
 
-    <div id = "container">
-        <div id = "title">Compost</div>
-        <div id = "body">
-            
-            <!-- Write heading under <b></b> tags. Content under <p></p> tags -->
-            <!-- When creating new headings, don't forget to insert new id with corresponing identifier. i.e) heading6, heading20, etc -->
-            <b id = "heading1">Heading 1</b>
-            <p>hello again</p>
+      <br>
 
-            <!-- <br/> used just to put whitespace on the page for testing purposes -->
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <b id="heading2"> Don't know what goes where? Use this tool!</b>
 
-            <b id = "heading2">Heading 2</b>
-
-            <!-- <br/> used just to put whitespace on the page for testing purposes -->
-            <br/><br/><br/><br/><br/><br/>
-       
-        </div>
+      <script>
+        _recollect_config = {
+          area: "Vancouver",
+          name: "wizard"
+        };
+      </script>
+      <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
 
 
-        <!-- credit for html, css, and js related to "return to top button" functionality
-        goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
-        -> line 102
-        -->
-        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+      <br>
+
+      <p class="credit">The information on this page was sourced from the <a
+          href="https://learn.eartheasy.com/guides/composting/">Eartheasy Composting Article</a>.</p>
+      <p class="credit">The photos on this page was sourced from the <a
+          href="https://vancouver.ca/home-property-development/garbage.aspx#redirect">City of Vancouver</a>.</p>
+      <br><br><br><br>
+
+
+
+
     </div>
 
 
+    <!-- credit for html, css, and js related to "return to top button" functionality
+        goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+        -> line 102
+        -->
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      data-abc="true"></a>
+  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <nav class="nav">
-        <!-- <a href="./about_us.html" class="navlink">
-            <i class="far fa-smile fa-3x"></i>
-            <span class="navtext">About Us</span>
-        </a> -->
-        <a href="./fav.html" class="navlink">
-            <i class="fas fa-info fa-3x"></i>
-          <span class="navtext">Brochure</span>
-        </a>
-        <a href="./index.html" class="navlink">
-            <i class="fas fa-home fa-3x"></i>
-          <span class="navtext">Home</span>
-        </a>
-        <a href="./cart.html" class="navlink">
-            <i class="fas fa-question-circle fa-3x"></i>
-            <span class="navtext">Quiz</span>
-        </a>
-      </nav>
-        <!---- Load React. -->
+  <nav class="nav">
+        <a href="./about-us.html" class="navlink">
+          <i class="far fa-smile fa-3x"></i>
+          <span class="navtext">About Us</span>
+      </a>
+    <a href="./landing.html" class="navlink">
+      <i class="fas fa-home fa-3x"></i>
+      <span class="navtext">Home</span>
+    </a>
+    <a href="./quiz.html" class="navlink">
+      <i class="fas fa-question-circle fa-3x"></i>
+      <span class="navtext">Quiz</span>
+    </a>
+  </nav>
+  <!---- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -144,21 +223,21 @@
   <!-- Load our React component. -->
   <script src="./my-app/src/search.js"></script>
 
-    <!----------------------------------------------->
-    <!-- JS: Boostrap, Firebase, API related    -->
-    <!----------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
+  <!----------------------------------------------->
+  <!-- JS: Boostrap, Firebase, API related    -->
+  <!----------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
 
-    <!--------------------------------------------------------------------->
-    <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    <script src="./js/compost.js">
-    </script>
-    
+  <!--------------------------------------------------------------------->
+  <!-- JS files: Your own JavaScript functions included here    -->
+  <!--------------------------------------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/trash.js">
+  </script>
+
 </body>
 
 </html>
