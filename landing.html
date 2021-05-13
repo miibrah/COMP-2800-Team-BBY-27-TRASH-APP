@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
 
     <!-- Optional styles and scripts of your own -->
-	<link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 
@@ -26,55 +26,96 @@
         <div>
             <a href="#" class="navbar-brand">
                 <!-- Logo Image -->
-                <img src="./images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
+                <img src="./images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2"
+                    id="image_logo">
                 <!-- Logo Text -->
                 <span class="text-uppercase font-weight-bold navbar-brand">Trash App</span>
-              </a>
+            </a>
         </div>
-        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"><span
-                class="navbar-toggler-icon "></span></button>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <li class="nav-item"><a class="nav-link" href="main.html"><i class="far fa-user"></i>
+                        Profile</a>
                 </li>
+                <!-- <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li> -->
                 <li class="nav-item">
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
-                      </form>
+                        <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm"
+                            type="submit">Search</button>
+                    </form>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <br>
+	<br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-around" >
+            <div class="col-4" class="jumbotron bg-cover" id="row1" >
+                <div class="row1_content">
+                <a href="" class="hover_recycle">
+                <h3>Recycables</h3>
+                <p>Click to learn everything about recyclings</p>
+                </a>
+                </div>
+            </div>
+            <div class="col-4" id="row2">
+                <div class="row2_content">
+                <a href="" class="hover_recycle">
+                <h4>Compostable</h4>
+                <p>Click to learn everything about composing</p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-around" >
+            <div class="col-4" id="row3" >
+                <div class="row3_content">
+                <a href="" class="hover_recycle">
+                <h3>Trash</h3>
+                <p>Click to learn everything about sorting Trash</p>
+            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="nav">
-        <!-- <a href="./about_us.html" class="navlink">
+        <a href="./about-us.html" class="navlink">
             <i class="far fa-smile fa-3x"></i>
             <span class="navtext">About Us</span>
-        </a> -->
-        <a href="./fav.html" class="navlink">
-            <i class="fas fa-info fa-3x"></i>
-          <span class="navtext">Brochure</span>
         </a>
-        <a href="./index.html" class="navlink">
+        <a href="./landing.html" class="navlink">
             <i class="fas fa-home fa-3x"></i>
-          <span class="navtext">Home</span>
+            <span class="navtext">Home</span>
         </a>
-        <a href="./cart.html" class="navlink">
+        <a href="./quiz.html" class="navlink">
             <i class="fas fa-question-circle fa-3x"></i>
             <span class="navtext">Quiz</span>
         </a>
-      </nav>
-        <!---- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </nav>
+    <br>
+	<br>
+    <br>
+    <!---- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-  <!-- Load our React component. -->
-  <script src="./my-app/src/search.js"></script>
+    <!-- Load our React component. -->
+    <script src="./my-app/src/search.js"></script>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
