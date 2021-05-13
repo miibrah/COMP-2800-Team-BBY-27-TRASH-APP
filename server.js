@@ -5,6 +5,8 @@ const routes = require('./API/routes') // includes the routes.js file
 
 const fs = require("fs");
 
+const Port = process.env.Port || 3000;
+
 // APP GETS
 app.get('/', function (req, res) {
 
@@ -34,7 +36,7 @@ app.use(routes)
 
 
 connectDB();
-const Port = process.env.Port || 3000;
+
 
 app.listen(Port, () => console.log ('Server started'));
 
