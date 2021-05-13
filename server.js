@@ -7,27 +7,27 @@ const fs = require("fs");
 
 const Port = process.env.Port || 3000;
 
-// APP GETS
-app.get('/', function (req, res) {
+// // APP GETS
+// app.get('/', function (req, res) {
 
-    // just being silly but you can change the header response so that it
-    // doesn't say Node.js, but some custom info about your app
-    res.set('Server', 'Wazubi Engine');
-    res.set('X-Powered-By', 'Magical Pixies');
+//     // just being silly but you can change the header response so that it
+//     // doesn't say Node.js, but some custom info about your app
+//     res.set('Server', 'Wazubi Engine');
+//     res.set('X-Powered-By', 'Magical Pixies');
 
-    fs.readFile("./landing.html", function (error, pgRes) {
-        if (error) {
-            res.writeHead(404);
-            res.write(msg404);
-        } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.write(pgRes);
-        }
+//     fs.readFile("./landing.html", function (error, pgRes) {
+//         if (error) {
+//             res.writeHead(404);
+//             res.write(msg404);
+//         } else {
+//             res.writeHead(200, { 'Content-Type': 'text/html' });
+//             res.write(pgRes);
+//         }
 
-        res.end();
-    });
+//         res.end();
+//     });
 
-});
+// });
 
 
 
