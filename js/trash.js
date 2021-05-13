@@ -21,3 +21,8 @@ $(document).ready(function () {
          return false;
      });
  });
+
+ <script>
+ _recollect_config = { area: "Vancouver", name: "wizard" };
+ </script>
+<script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
