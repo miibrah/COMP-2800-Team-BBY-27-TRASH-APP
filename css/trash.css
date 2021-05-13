@@ -36,14 +36,14 @@
 }
 
 #TOC {
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 a {
     text-decoration: none;
 }
 a:link, a:visited {
-    color: white;
+    color: rgb(0, 50, 143);
 }
 a:hover {
     color: black;
