@@ -30,6 +30,12 @@
     color: black;
 }
 
+#body > div {
+    padding: 5px 0 2px 5px;
+    margin: 0px;
+    color: black;
+}
+
 .anchor-parent > a {
     color: white;
     display: block;
@@ -95,4 +101,9 @@ a:hover {
     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
     background-color: hsla(5, 76%, 62%, .8);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+#img-compost {
+    max-width: 100%;
+    height: auto;
 }
