@@ -49,6 +49,35 @@ a:hover {
     color: black;
 }
 
+.container {
+    display: flex;
+    /* margin-right: 0;
+    padding-right: 0; */
+}
+
+.image-container {
+
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: 2%;
+    margin-right: 0;
+    margin-top: 3%;
+    padding-right: 0;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    flex-grow: 1;
+}
+
+.image-text {
+    margin-top: 3%;
+    margin-left: 20px;
+    padding: 2%;
+    flex-shrink: 1;
+}
+
 
 /** 
     credit for html, css, and js related to "return to top button" functionality

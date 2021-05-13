@@ -2,10 +2,9 @@ const express = require('express')
 const app = express()
 const connectDB = require ('./DB/connection');
 const routes = require('./API/routes') // includes the routes.js file
-const cors = require('cors') // includes cors module
 
 
-app.use(cors())
+
 
 app.use(express.json()) 
 app.use(routes) 
