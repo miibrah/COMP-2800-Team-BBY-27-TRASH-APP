@@ -14,10 +14,12 @@ app.use('/images', express.static('./private/images'));
 app.use('/js', express.static('./private/js'));
 
 
+app.get('/', function (request, response) {
+    response.sendFile(__dirname + './landing.html');
+});
 
 // APP GETS
 app.get('/', function (req, res) {
-
     // just being silly but you can change the header response so that it
     // doesn't say Node.js, but some custom info about your app
     res.set('Server', 'Wazubi Engine');
@@ -34,10 +36,7 @@ app.get('/', function (req, res) {
 
         res.end();
     });
-
 });
-
-
 
 
 
