@@ -4,7 +4,7 @@ const Question = require('../DB/Question')
 
 
 // get all quiz questions
-router.get('/questionss', async (req, res) => {
+router.get('/quiz', async (req, res) => {
     try {
         const questions = await Question.find()
         return res.status(200).json(questions)
