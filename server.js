@@ -1,11 +1,10 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+
 const connectDB = require ('./DB/connection');
 const routes = require('./API/routes') // includes the routes.js file
 
 const fs = require("fs");
-
-
 const Port = process.env.PORT || 3000;
 
 // STATIC DIRECTORIES
@@ -134,7 +133,11 @@ app.get('/quiz.html', function(req, res){
     });
 });
 
+app.set('view engine', 'ejs');
 
+app.get('/quizz', (req,res) =>{
+ res.render('quiz');
+})
 
 app.use(express.json()) 
 app.use(routes) 
