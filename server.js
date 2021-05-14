@@ -12,6 +12,7 @@ const Port = process.env.PORT || 3000;
 app.use('/css', express.static('./private/css'));
 app.use('/images', express.static('./private/images'));
 app.use('/js', express.static('./private/js'));
+// app.use('private/js', express.static('./private/js/'));
 
 
 app.get('/landing', function (request, response) {
@@ -26,6 +27,98 @@ app.get('/', function (req, res) {
     res.set('X-Powered-By', 'Magical Pixies');
 
     fs.readFile("./landing.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+
+app.get('/recycle.html', function(req, res){
+
+    fs.readFile("./recycle.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+app.get('/compost.html', function(req, res){
+
+    fs.readFile("./compost.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+app.get('/trash.html', function(req, res){
+
+    fs.readFile("./trash.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+app.get('/about-us.html', function(req, res){
+
+    fs.readFile("./about-us.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+app.get('/landing.html', function(req, res){
+
+    fs.readFile("./landing.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+
+app.get('/quiz.html', function(req, res){
+
+    fs.readFile("./quiz.html", function (error, pgRes) {
         if (error) {
             res.writeHead(404);
             res.write(msg404);
