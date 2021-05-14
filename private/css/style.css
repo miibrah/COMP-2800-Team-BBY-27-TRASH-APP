@@ -235,4 +235,8 @@ h3 {
   #row1 {
     height: 25vh;
   }
+
+  .font-content {
+    font-size: small;
+  }
  }
