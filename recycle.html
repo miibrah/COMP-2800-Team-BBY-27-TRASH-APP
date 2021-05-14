@@ -12,9 +12,10 @@
 	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
 
     <!-- Optional styles and scripts of your own -->
-	<link rel="stylesheet" href="./css/style.css"/>
-    <link rel = "stylesheet" href = "./css/recycle.css">
-
+	<link rel="stylesheet" href="./private/css/style.css"/>
+  <link rel = "stylesheet" href = "./private/css/recycle.css">
+  <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
+  
 </head>
 
 <body>
@@ -24,46 +25,48 @@
     <!-------------------------------------->
 
     <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
-        <div>
-            <a href="#" class="navbar-brand">
-                <!-- Logo Image -->
-                <img src="./images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
-                <!-- Logo Text -->
-                <span class="text-uppercase font-weight-bold navbar-brand">Trash App</span>
-              </a>
-        </div>
-        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"><span
-                class="navbar-toggler-icon "></span></button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
-                </li>
-                <li class="nav-item">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
-                      </form>
-                </li>
-            </ul>
-        </div>
+      <div>
+        <a href="./landing.html" class="navbar-brand">
+          <!-- Logo Image -->
+          <img src="./private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
+          <!-- Logo Text -->
+          <span class="text-uppercase font-weight-bold navbar-brand">Trash App</span>
+        </a>
+      </div>
+      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
+                placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Content -->
 
     <div class="pos-f-t sticky-top" id = "TOC">
         <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-info p-4 anchor-parent">
+          <div class="bg-info p-3 anchor-parent">
             <h4 class="text-white">List of page anchors</h4>
             
             <!-- List of anchors; add as many as you want and link them to the appropiate heading by putting id of heading inside anchor href.
             data-toggle and data-target attributes closes navbar menu when anchor is clicked-->
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading1">Name of heading 1</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading2">Name of heading 2</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading3">Name of heading 3</a></div>
-            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading4">Name of heading 4</a></div>
-
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading1">Why recycle?</a></div>
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading2">Rule of thumb's for proper recycling</a></div>
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading3">Non-recyclable items</a></div>
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading4">Recycling Misconceptions</a></div>
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading5">Take-bake program</a></div>
+            <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href = "#heading6">Don't know what goes where? Use this tool!</a></div>
 
           </div>
         </div>
@@ -100,45 +103,123 @@
             <b id = "heading2">Rule of thumb's for </b> <b>Proper Recycling</b>
             <div class = "container">
               <div class = "image-container">
-                <img class = "image" src = "images/recycle1.png" alt = "green">
+                <img class = "image" src = "./private/images/recycle1.png" alt = "green">
               </div>
               <p class = "image-text"> Clean bottles, cans, cardbaord, and paper are recyclable.</p>
             </div>
 
             <div class = "container">
               <div class = "image-container">
-                <img class = "image" src = "images/recycle2.png" alt = "red">
+                <img class = "image" src = "./private/images/recycle2.png" alt = "red">
               </div>
               <p class = "image-text" style = "color: red;"> Keep liquids and food away from your recycling. <span style = "color: white">----------- </span></p>
             </div>
 
             <div class = "container">
               <div class = "image-container">
-                <img class = "image" src = "images/recycle3.png" alt = "red">
+                <img class = "image" src = "./private/images/recycle3.png" alt = "red">
               </div>
               <p class = "image-text" style = "color: red;"> No bagged recyclables or loose plastic bags. <span style = "color:white">----------- </span></p>
             </div>
 
             <b id = "heading3">Non-recyclable items</b> <b></b>
+
             <ul>
-              <li>no packaging with multimaterials/ mixed-plastics </li>
-              <li>no plastic or polystyrene foam packaging</li>
-              <li>no cups with plastic or wax coatings</li>
-              <li>no plastic wrap/film</li>
+              <li>no packaging with <b>multimaterials/mixed-plastics</b> </li>
+              <li>no plastic or <b>polystyrene foam packaging</b></li>
+              <li>no cups with <b>plastic or wax coatings</b></li>
+              <li>no <b>plastic wrap/film</b></li>
             </ul>
             
 
-           
+            <b id = "heading4">Recycling </b> <b>Misconceptions</b>
+
+            <ol>
+              <li><b style = "color: red;">Containers must be thoroughly cleaned to be recycled.</b></li>
+              <p><b>False.</b> The objective is to clean your recyclables enough where they 
+                do not contaminate other materials (i.e. your recycling bin, or paper).
+              </p>
+
+              <li><b style = "color: red;">Seperating trash from your recyclables isn't that important.</b></li>
+              <p><b>False.</b> Putting non-recyclable items in your blue bin can cause costly damange to the equipment
+              once it arrives at a recycling center. If you aren't sure what can be recycled or not, check your local
+              recycling center.</p>
+
+              <li><b style = "color: red;">I can't recycle my delivery pizza boxes.</b></li>
+              <p><b>It depends.</b>You be the judge; if your pizza box isn't that greasy,
+                and is free from leftovers or liners, it CAN be recycled. 
+               </p>
+
+               <li><b style = "color: red;">What you recycle must be in good condition</b></li>
+              <p><b>False.</b> Most of your recycled items will be compressed into pellets or melted anyways,
+                so it being in imperfect condition does not really matter. 
+                <b>However,</b> broken glass is an exception. Be sure to wrap the boken shards into
+                in a newspaper or place them inside a cardboard box before placing them inside the designated 
+                glass recycling bin (grey colored). 
+               </p>
+            </ol>
+
+            <b id = "heading5">Take-Back Program </b> <b></b>
+            <p>The following items will <b>not</b> be accepted through the City's recycling program, but
+            are still recyclable through a Provincial Take-Back Program. <b>(keep these items away from your garbage)</b></p>
+
+            <div class = "container1">
+              <div class = "item1">
+                <img class = "image" src = "./private/images/take-back1.png">
+              </div>
+
+              <div class = "item2">
+                <img class = "image" src = "./private/images/take-back2.png">
+              </div>
+
+              <div class = "item3">
+                <img class = "image" src = "./private/images/take-back3.png">
+              </div>
+
+              <div class = "item4">
+                <img class = "image" src = "./private/images/take-back4.png">
+              </div>
+
+              <div class = "item5">
+                <img class = "image" src = "./private/images/take-back5.png">
+              </div>
+
+              <div class = "item6">
+                <img class = "image" src = "./private/images/take-back6.png">
+              </div>
+
+              <div class = "item7">
+                <img class = "image" src = "./private/images/take-back7.png">
+              </div>
+
+              <div class = "item8">
+                <img class = "image" src = "./private/images/take-back8.png">
+              </div>
+
+              <div class = "item9">
+                <img class = "image" src = "./private/images/take-back9.png">
+              </div>
+
+            </div>
+
+            <p><b>Find a drop of location by:</b></p>
+            <ol>
+              <li style = "color: black">contacting (604-732-9253)</li>
+              <li style = "color: black">Visiting BCRecycles.ca</li>
+              <li style = "color: black">Visiting metrovancouverrecycles.org</li>
+            </ol>
+
+
 
             <!-- <br/> used just to put whitespace on the page for testing purposes -->
-            <br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/>
        
             <!-- <div class = "image-container">
               <p style="float:left;"><img class = "image" src = "images/recycle1.png" alt = "green"></p>
               <p style="float:right;"></p><span class = "hello">hello</span></p>
             </div> -->
             
-            <b id = "heading2"> Don't know what goes</b> <b> where? Use this tool!</b>
+            <b id = "heading6"> Don't know what goes</b> <b> where? Use this tool!</b>
 
             <div style = "padding: 5px;">
             <script>
@@ -148,14 +229,19 @@
             </div>
 
 
+
+
+
             <br/> <br/>
             <p>The information on this page was sourced from  </p>
             <ul>
               <li><a style = "color: black" href = "https://www.recyclenow.com/recycling-knowledge/why-recycle#:~:text=Recycling%20helps%20protect%20the%20environment,helps%20to%20tackle%20climate%20change."> www.recyclenow.com</a></li>
-              <li><a style = "color: black" href = "https://www.wm.com/ca/en/recycle-right/recycling-101">waste management</a></li>
+              <li><a style = "color: black" href = "https://www.wm.com/ca/en/recycle-right/recycling-101">www.wm.com (Waste Management)</a></li>
+              <li><a style = "color: black" href = "https://www.popularmechanics.com/science/environment/g29740355/recycling-facts/">www.popularmechanics.com</a></li>
+              <li><a style = "color: black" href = "https://www.burnaby.ca/City-Services/Garbage---Recycling.html">www.burnaby.ca</a></li>
             </ul>
-
-            <br/> <br/> <br/> <br/> <br/> <br/> 
+            
+            <br/> <br/> <br/> <br/> <br/>  
         </div>
 
 
@@ -181,11 +267,11 @@
 
 
 
-    <nav class="nav">
-        <!-- <a href="./about_us.html" class="navlink">
+    <!-- <nav class="nav">
+        <a href="./about_us.html" class="navlink">
             <i class="far fa-smile fa-3x"></i>
             <span class="navtext">About Us</span>
-        </a> -->
+        </a>
         <a href="./fav.html" class="navlink">
             <i class="fas fa-info fa-3x"></i>
           <span class="navtext">Brochure</span>
@@ -198,7 +284,22 @@
             <i class="fas fa-question-circle fa-3x"></i>
             <span class="navtext">Quiz</span>
         </a>
-      </nav>
+      </nav> -->
+
+      <nav class="nav">
+        <a href="./about-us.html" class="navlink">
+          <i class="far fa-smile fa-3x"></i>
+          <span class="navtext">About Us</span>
+      </a>
+    <a href="./landing.html" class="navlink">
+      <i class="fas fa-home fa-3x"></i>
+      <span class="navtext">Home</span>
+    </a>
+    <a href="./quiz.html" class="navlink">
+      <i class="fas fa-question-circle fa-3x"></i>
+      <span class="navtext">Quiz</span>
+    </a>
+  </nav>
         <!---- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
@@ -220,7 +321,7 @@
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    <script src="./js/recycle.js">
+    <script src="./private/js/recycle.js">
     </script>
     
 </body>
