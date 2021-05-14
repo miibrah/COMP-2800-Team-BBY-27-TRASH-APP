@@ -3,11 +3,9 @@ const app = express();
 const Port = process.env.Port || 3000;
 const connectDB = require ('./DB/connection');
 const routes = require('./API/routes') // includes the routes.js file
-const ejs = require('ejs');
+
 const fs = require("fs");
 
-
-const Port = process.env.PORT || 3000;
 
 // STATIC DIRECTORIES
 app.use('/css', express.static('./private/css'));
