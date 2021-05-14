@@ -5,6 +5,16 @@ const routes = require('./API/routes') // includes the routes.js file
 
 const fs = require("fs");
 
+
+const Port = process.env.PORT || 3000;
+
+// STATIC DIRECTORIES
+app.use('/css', express.static('./private/css'));
+app.use('/images', express.static('./private/images'));
+app.use('/js', express.static('./private/js'));
+
+
+
 // APP GETS
 app.get('/', function (req, res) {
 
@@ -36,7 +46,7 @@ app.use(routes)
 
 
 connectDB();
-const Port = process.env.Port || 3000;
+
 
 app.listen(Port, () => console.log ('Server started'));
 
