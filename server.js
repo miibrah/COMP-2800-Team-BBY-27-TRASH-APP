@@ -3,7 +3,7 @@ const app = express();
 const Port = process.env.Port || 3000;
 const connectDB = require ('./DB/connection');
 const routes = require('./API/routes') // includes the routes.js file
-
+const ejs = require('ejs');
 const fs = require("fs");
 
 // APP GETS
@@ -28,7 +28,11 @@ app.get('/', function (req, res) {
 
 });
 
+app.set('view engine', 'ejs');
 
+app.get('/quizz', (req,res) =>{
+ res.render('quiz');
+})
 
 app.use(express.json()) 
 app.use(routes) 
