@@ -225,6 +225,26 @@ h3 {
   font-family: 'Roboto', sans-serif;
 }
 
+#back-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#swap-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+
+#reader {
+	min-width: 350px;
+	width: 100%;
+}
+
 @media (max-width: 991.98px) { 
   #row3 {
     height: 25vh;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>QR Scanner</title>
+
+	<!-- Bootstrap for Mobile-first, and JQuery -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- Optional styles and scripts of your own -->
+	<link rel="stylesheet" href="private/css/style.css" />
+	<style>
+		body {
+			background-color: #222222;
+		}
+	</style>
+</head>
+
+<body>
+	<!-------------------------------------->
+	<!-- The following is HTML for layout -->
+	<!-------------------------------------->
+	<div id="camera-wrapper">
+		<a href="landing.html">
+			<div class="btn btn-secondary" id="back-btn">X</div>
+		</a>
+		<div class="btn btn-secondary" id="swap-btn" name="switch" backCam="false">Swap</div>
+		<div id="reader"></div>
+	</div>
+
+	<!----------------------------------------------->
+	<!-- JS: Boostrap, API related    -->
+	<!----------------------------------------------->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+	</script>
+
+	<!--------------------------------------------------------------------->
+	<!-- JS files: Your own JavaScript functions included here    -->
+	<!--------------------------------------------------------------------->
+	<script type="text/javascript" src="API/html5-qrcode.min.js"></script>
+	<script type="text/javascript" src="private/js/scan.js"></script>
+</body>
+
+</html>
