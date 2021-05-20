@@ -196,10 +196,11 @@ a:hover {
   #toTopBtn {
     position: fixed;
     bottom: 15%;
-    right: 5%;
+    right: 0%;
     z-index: 98;
     padding: 21px;
-    background-color: rgb(200, 202, 62);
+    color: rgb(125, 177, 70);
+    /* background-color: rgb(200, 202, 62); */
 }
 
 .js .cd-top--fade-out {
