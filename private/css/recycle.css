@@ -196,10 +196,11 @@ a:hover {
   #toTopBtn {
     position: fixed;
     bottom: 15%;
-    right: 5%;
+    right: 0%;
     z-index: 98;
     padding: 21px;
-    background-color: rgb(200, 202, 62);
+    color: rgb(125, 177, 70);
+    /* background-color: rgb(200, 202, 62); */
 }
 
 .js .cd-top--fade-out {
@@ -232,4 +233,9 @@ a:hover {
     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
     background-color: hsla(5, 76%, 62%, .8);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+.svg-manip {
+    float: right;
+    margin-right: 10%;
 }
