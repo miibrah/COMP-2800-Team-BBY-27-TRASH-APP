@@ -12,6 +12,7 @@ function docReady(fn) {
 	}
 }
 
+//Call the function
 docReady(function() {
 	var lastMessage;
 	function onScanSuccess(qrCodeMessage) {
@@ -24,3 +25,5 @@ docReady(function() {
 		"reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
 	html5QrcodeScanner.render(onScanSuccess);
 });
+
+module.exports = docReady;

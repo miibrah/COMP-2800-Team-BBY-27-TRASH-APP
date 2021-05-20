@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const connectDB = require ('./DB/connection');
-const routes = require('./API/routes') // includes the routes.js file
+const routes = require('./API/routes'); // includes the routes.js file
 
 const fs = require("fs");
 const Port = process.env.PORT || 3000;
@@ -11,6 +11,7 @@ const Port = process.env.PORT || 3000;
 app.use('/css', express.static('./private/css'));
 app.use('/images', express.static('./private/images'));
 app.use('/js', express.static('./private/js'));
+app.use('/API', express.static('./API'));
 app.set('views', express.static('./views'));
 app.set('view engine', 'ejs');
 
@@ -24,10 +25,12 @@ app.get('/landing', function (request, response) {
     response.sendFile(__dirname + './landing.html');
 });
 
+app.get('/scan', function (request, response) {
+    response.sendFile(__dirname + './scan.html');
+});
+
 // APP GETS
 app.get('/', function (req, res) {
-    // just being silly but you can change the header response so that it
-    // doesn't say Node.js, but some custom info about your app
     res.set('Server', 'Wazubi Engine');
     res.set('X-Powered-By', 'Magical Pixies');
 
@@ -154,8 +157,8 @@ app.get('/scan.html', function(req, res){
 
 
 
-app.use(express.json()) 
-app.use(routes) 
+app.use(express.json());
+app.use(routes);
 
 
 connectDB();
