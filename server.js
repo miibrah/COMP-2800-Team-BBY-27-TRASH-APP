@@ -19,6 +19,8 @@ app.set('view engine', 'ejs');
 app.use('/private/images', express.static('./private/images'));
 app.use('/private/css', express.static('./private/css'));
 app.use('/private/js', express.static('./private/js'));
+app.use('/private/images', express.static('./private/images'));
+app.use('/private/music', express.static('./private/music'));
 
 
 app.get('/landing', function (request, response) {
