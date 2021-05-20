@@ -158,6 +158,22 @@ app.get('/contact_us.html', function(req, res){
     });
 });
 
+app.get('/thank_you.html', function(req, res){
+
+    fs.readFile("./thank_you.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+        
+
+        res.end();
+    });
+});
+
 const contactusSchema = {
     name: String,
     email: String,
@@ -173,7 +189,7 @@ const contactusSchema = {
        message: req.body.message
     })
     newContactUs.save();
-    res.redirect('/landing.html');
+    res.redirect('/thank_you.html');
  })
 
 
