@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const User = require('./model/user');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const session = require('express-session')
 
 const JWT_SECRET = 'asdinahosidha;sidh!@##$^#$%#asluidalisudhlauisdhasuidh';
 
@@ -33,6 +34,14 @@ app.set('view engine', 'ejs');
 app.use('/private/images', express.static('./private/images'));
 app.use('/private/css', express.static('./private/css'));
 app.use('/private/js', express.static('./private/js'));
+
+app.use(session(
+    {
+        secret:'extra text that no one will guess',
+        name:'wazaSessionID',
+        resave: false,
+        saveUninitialized: true 
+}));
 
 
 app.get('/landing', function (request, response) {
@@ -133,6 +142,11 @@ app.get('/landing.html', function(req, res){
 
         res.end();
     });
+
+    if(req.session.loggedIn) {
+        console.log("secret message");
+        console.log(req.session.email);
+    } 
 });
 
 
@@ -182,6 +196,7 @@ app.get('/register.html', function(req, res){
         res.end();
     });
 });
+
 
 
 app.post('/api/register', async (req, res) => {
@@ -244,12 +259,53 @@ app.post('/api/login', async (req, res) => {
             JWT_SECRET
             )
 
+        req.session.loggedIn = true;
+        req.session.email = username;
+        req.session.save(function(err) {
+            // session saved
+        });
+
         return res.json({ status: 'ok', data: token });
     }
 
     res.json( {status: 'error', error: 'Invalid username/password' } )
 
 })
+
+app.get('/logout', function(req,res){
+    console.log('Session with ', req.session.email, ' is destroyed!');
+    req.session.destroy(function(error){
+        if(error) {
+            console.log(error);
+            console.log("session destory function encounted an error");
+        } else {
+            console.log('totally');
+        }
+    });
+    res.redirect("/login.html");
+})
+
+// app.get('/landing', function(req, res){
+
+//     fs.readFile("./landing.html", function (error, pgRes) {
+//         if (error) {
+//             res.writeHead(404);
+//             res.write(msg404);
+//         } else {
+//             res.writeHead(200, { 'Content-Type': 'text/html' });
+//             res.write(pgRes);
+//         }
+
+//         res.end();
+//     });
+
+//     if(req.session.loggedIn) {
+//         console.log("secret message");
+//         console.log(req.session.email);
+//     }
+// });
+
+
 
 app.use(express.json()) 
 app.use(routes) 

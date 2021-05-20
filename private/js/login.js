@@ -99,21 +99,10 @@ $(document).ready(function () {
             //everything went fine
             console.log('Got the token: ', result.data);
             alert('Success');
+            window.location.replace("/landing.html");
         } else {
             alert(result.error);
             
-            // let message = "<p>";
-            // message += result['error'];
-            // message += "</p>"
-
-            // var txt = '{"name":"John", "age":30, "city":"New York"}'
-            // var obj = JSON.parse(txt);
-            // document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
-
-            // let message = result.error;
-
-            // let testM = JSON.parse(message);
-            // let testM = JSON.parse(result);
             let tryMe = 'try again';
             document.getElementById('alerts').innerText = tryMe;
         }
