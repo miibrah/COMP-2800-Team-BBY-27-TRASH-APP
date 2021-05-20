@@ -158,6 +158,27 @@ app.get('/contact_us.html', function(req, res){
     });
 });
 
+const contactusSchema = {
+    name: String,
+    email: String,
+    message: String
+ }
+ 
+ const contactUs = mongoose.model("Contact Us", contactusSchema);
+ 
+ app.post("/", function(req,res) {
+    let newContactUs = new contactUs({
+       name: req.body.name,
+       email: req.body.email,
+       message: req.body.message
+    })
+    newContactUs.save();
+    res.redirect('/landing.html');
+ })
+
+
+ module.exports = contactusSchema
+
 
 
 app.use(express.json()) 
