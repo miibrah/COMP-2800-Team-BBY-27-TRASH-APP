@@ -26,4 +26,4 @@ docReady(function() {
 	html5QrcodeScanner.render(onScanSuccess);
 });
 
-module.exports = docReady;
+

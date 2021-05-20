@@ -245,6 +245,29 @@ h3 {
 	width: 100%;
 }
 
+#camera-wrapper {
+	margin: auto;
+	width: 50%;
+	min-width: 350px;
+	position: relative;
+}
+
+.popup-box {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.listalignment {
+	min-width: 300px;
+	max-width: 650px;
+	margin: 2em auto;
+	font-size: 20pt;
+	display: flex;
+	justify-content: space-evenly;
+}
+
 @media (max-width: 991.98px) { 
   #row3 {
     height: 25vh;
