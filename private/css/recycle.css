@@ -233,3 +233,8 @@ a:hover {
     background-color: hsla(5, 76%, 62%, .8);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
 }
+
+.svg-manip {
+    float: right;
+    margin-right: 10%;
+}
