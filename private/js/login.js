@@ -54,6 +54,8 @@ $(document).ready(function () {
             alert('Success');
             document.getElementById('alerts').style.color = "lightGreen";
             document.getElementById('alerts').innerHTML = "Success";
+
+            window.location.replace("/landing.html");
         } else {
             alert(result.error);
             

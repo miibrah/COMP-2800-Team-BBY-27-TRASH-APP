@@ -228,6 +228,13 @@ app.post('/api/register', async (req, res) => {
             password
         })
         console.log("User created succesfully", response)
+
+        req.session.loggedIn = true;
+        req.session.email = username;
+        req.session.save(function(err) {
+            // session saved
+        });
+        
     } catch(error) {
         if (error.code === 11000) {
             return res.json({ status: 'error', error: 'Username already in use' })
