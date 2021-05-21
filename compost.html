@@ -90,7 +90,7 @@
       <br>
       <br>
 
-      <b id="heading2">Composting Benefits</b>
+      <b id="heading1">Composting Benefits</b>
       <p>Compost is the single most important supplement you can give your garden. It’s a simple way to add
         nutrient-rich humus to your lawn or garden that fuels plant growth and restores vitality to depleted soil. It's
         also free, easy to make, and good for the environment. But composting also has other benefits.
@@ -134,7 +134,7 @@
       <br>
 
 
-      <b id="heading2">How to Compost</b>
+      <b id="heading3">How to Compost</b>
       <div>
         <ol>
           <li><strong>Start your compost pile on bare earth.</strong>
@@ -166,7 +166,7 @@
 
       <br>
 
-      <b id="heading2"> Don't know what goes where? Use this tool!</b>
+      <b id="heading4"> Don't know what goes where? Use this tool!</b>
 
       <script>
         _recollect_config = {
@@ -176,6 +176,17 @@
       </script>
       <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
 
+
+
+      <div class="footer">
+        <div class="do-the-thing">
+          <div class = "elevator" id = "toTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+              <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+          </div>
+        </div>
+    </div>
 
       <br>
 
@@ -191,8 +202,8 @@
         goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
         -> line 102
         -->
-    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
-      data-abc="true"></a>
+    <!-- <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      data-abc="true"></a> -->
   </div>
 
 
@@ -231,7 +242,19 @@
   <!-- JS files: Your own JavaScript functions included here    -->
   <!--------------------------------------------------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/trash.js">
+  <script src="/private/js/trash.js"></script>
+  <script src = "/private/js/elevator.js"></script>
+
+  <script>
+
+    // Simple elevator usage.
+    var elementButton = document.querySelector('.elevator');
+    var elevator = new Elevator({
+        element: elementButton,
+        mainAudio: '/private/music/elevator.mp3', // Music from http://www.bensound.com/
+        endAudio:  '/private/music/ding.mp3'
+    });
+
   </script>
 
 </body>
