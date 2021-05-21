@@ -402,13 +402,8 @@ app.use(express.json())
 
 app.use(routes) 
 
-<<<<<<< HEAD
-
-
-=======
 // Sam msg: I commented connectDB() b/c we seemed to have been getting errors when we hosted locally b/c of it. 
->>>>>>> 57ea76804410f5afd7ddbbd1bd75d2aeec073221
-connectDB();
+// connectDB();
 
 
 app.listen(Port, () => console.log ('Server started'));
