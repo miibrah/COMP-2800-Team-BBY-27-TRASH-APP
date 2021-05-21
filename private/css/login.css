@@ -6,11 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-/* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
+
 
 html,body{
     background-image: url('/private/images/login-bg-waterfall.jpg');
@@ -20,22 +16,22 @@ html,body{
   font-family: 'Numans', sans-serif;
   }
 
-.container{
+/* .container{
     background-image: url('/private/images/login-bg-waterfall.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 height: 100%;
 width: 100vw;
 align-content: center;
-}
+} */
 
-.card{
+/* .card{
 height: 370px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
-}
+} */
 
 .social_icon span{
 font-size: 60px;
@@ -99,4 +95,46 @@ color: white;
 
 .links a{
 margin-left: 4px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+      background-image: url('/private/images/login-bg-waterfall.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: 100vw;
+      align-content: center;
+
+    }
+
+    .card{
+      height: 370px;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 400px;
+      background-color: rgba(0,0,0,0.5) !important;
+      }
+}
+
+@media only screen and (min-width: 500px) {
+    html,body{
+      background-image: url('https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+      }
+
+      .card{
+        height: 370px;
+
+        margin-top: 30%;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        }
+
 }

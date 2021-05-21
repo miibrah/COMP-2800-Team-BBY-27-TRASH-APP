@@ -145,7 +145,7 @@ app.get('/landing.html', function(req, res){
 
     if(req.session.loggedIn) {
         console.log("secret message");
-        console.log(req.session.email);
+        console.log(req.session.email, "is logged in!");
     } 
 });
 
@@ -285,25 +285,6 @@ app.get('/logout', function(req,res){
     res.redirect("/login.html");
 })
 
-// app.get('/landing', function(req, res){
-
-//     fs.readFile("./landing.html", function (error, pgRes) {
-//         if (error) {
-//             res.writeHead(404);
-//             res.write(msg404);
-//         } else {
-//             res.writeHead(200, { 'Content-Type': 'text/html' });
-//             res.write(pgRes);
-//         }
-
-//         res.end();
-//     });
-
-//     if(req.session.loggedIn) {
-//         console.log("secret message");
-//         console.log(req.session.email);
-//     }
-// });
 
 
 

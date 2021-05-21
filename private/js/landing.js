@@ -35,12 +35,12 @@
 
 // });
 
-document.getElementById("sessionTest").addEventListener("click", sessionTester);
+// document.getElementById("sessionTest").addEventListener("click", sessionTester);
 
-    function sessionTester() {
-        // console.log(session.email);
-        console.log("hello sessio tester");
-    }
+//     function sessionTester() {
+//         // console.log(session.email);
+//         console.log("hello sessio tester");
+//     }
 
 // $(document).ready(function() {
 
