@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 
 const connectDB = require ('./DB/connection');
-const run = require ('./DB/items');
-const success = require ('./private/js/success');
+// const run = require ('./DB/items');
+// const success = require ('./private/js/success');
 const routes = require('./API/routes'); // includes the routes.js file
 
 const fs = require("fs");
@@ -81,6 +81,22 @@ app.get('/compost.html', function(req, res){
         res.end();
     });
 });
+
+app.get('/cheetos.html', function(req, res){
+
+    fs.readFile("./cheetos.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
 
 app.get('/trash.html', function(req, res){
 
@@ -181,8 +197,8 @@ app.use(routes);
 
 
 connectDB();
-run();
-success();
+// run();
+// success();
 
 
 app.listen(Port, () => console.log ('Server started'));

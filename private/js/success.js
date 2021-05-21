@@ -17,7 +17,7 @@ const success = async function run() {
     };
     const item1 = await items.findOne(query, options);
     const cheetos = JSON.stringify(item1.name);
-    // $("#success-item-name").text("cheetos");
+    $("#success-item-name").text("cheetos");
     console.log(query);
     console.log(cheetos);
 

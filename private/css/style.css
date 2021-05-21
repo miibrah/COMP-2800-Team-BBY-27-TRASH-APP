@@ -256,7 +256,8 @@ h3 {
 	text-align: center;
 	margin: auto;
 	width: 100%;
-	margin-top: 50px;
+  margin-top: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .listalignment {
@@ -284,6 +285,8 @@ h3 {
   height: 30vh;
   width: auto;
 }
+
+
 
 @media (max-width: 991.98px) { 
   #row3 {

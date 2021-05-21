@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Scan Completed</title>
+        <title>Cheetos</title>
         <!-- Bootstrap for Mobile-first, and JQuery -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,7 +14,6 @@
         <!-- Optional styles and scripts of your own -->
         <link rel="stylesheet" href="./private/css/style.css" />
         <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
-    
 
     </head>
 
@@ -37,7 +36,7 @@
             data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="scan.html"><i class="fas fa-qrcode"></i> QR Scanner</a></li>
+                <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact_us.html"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                 <li class="nav-item">
@@ -52,19 +51,26 @@
         </div>
     </nav>
 
-	<div class="popup-box" style="text-align: center;">
-		<div>
+    <!-- credit to https://bootstrapious.com/p/bootstrap-static-header how to make static header -->
+    <div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white" id="intro">
+        <div class="container py-5 text-center">
+            <h1 class="display-4 font-weight-bold">Waste Wizard</h1>
+            <p class="font-italic mb-0">Recycle and dispose of items the right way with Waste Wizard</p>
             
-			<img src="https://www.cheetos.com/sites/cheetos.com/files/2019-02/Cheetos%20Puffs_0.png" alt="tick image" class="item-image">
-            <br>
-            <h1> QR is Successfully Scanned!</h1>
-            <p style="font-family: ">Is this your item?</p>
-            <div class="listalignment">
-                <span><a class="btn btn-secondary" href="scan.html">Rescan</a></span>
-                <span><a class="btn btn-primary" href="cheetos.html">Yes</a></span>
-            </div>
+            <a href="#" id="buttn" role="button" class="btn btn-primary px-5">Try it out</a>
         </div>
     </div>
+
+    <div  style="display: none;" id="wizard">
+        
+            <div style = "padding: 0px; border-radius: 25%;">
+                <script>
+                  _recollect_config = { area: "Vancouver", name: "wizard" };
+                </script>
+                <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
+                </div>
+    </div>
+
     
     <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
     data-abc="true"></a>
@@ -103,7 +109,12 @@
     <script src="./private/js/success.js"></script> -->
 	<script src="./private/js/scan.js"></script>
     <script src="./API/html5-qrcode.min.js"></script>
-
+    <script>
+        $('#buttn').on('click', function(){
+        $('#intro').hide('slow')
+        $('#wizard').show('slow');
+});
+    </script>
     
 </body>
 
