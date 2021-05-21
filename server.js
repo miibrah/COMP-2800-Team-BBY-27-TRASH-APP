@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 
 const connectDB = require ('./DB/connection');
+const run = require ('./DB/items');
+const success = require ('./private/js/success');
 const routes = require('./API/routes'); // includes the routes.js file
 
 const fs = require("fs");
@@ -179,6 +181,8 @@ app.use(routes);
 
 
 connectDB();
+run();
+success();
 
 
 app.listen(Port, () => console.log ('Server started'));

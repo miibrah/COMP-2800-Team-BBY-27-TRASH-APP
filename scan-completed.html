@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Scan completed</title>
+        <title>Scan Completed</title>
         <!-- Bootstrap for Mobile-first, and JQuery -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="./private/css/style.css" />
         <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
     
+
     </head>
 
 <body>
@@ -51,21 +52,25 @@
         </div>
     </nav>
 
-	<div class="popup-box">
+	<div class="popup-box" style="text-align: center;">
 		<div>
-			<img src="https://www.botlibre.com/media/a11675764-0.png" alt="tick image" style="text-align: center;">
-			<h1> QR is Successfully Scanned!</h1>
-		</div>
+			<img src="https://www.cheetos.com/sites/cheetos.com/files/2019-02/Cheetos%20Puffs_0.png" alt="tick image" class="item-image">
+            <h1> QR is Successfully Scanned!</h1>
+            <p>Is this your item?</p>
+            <div class="listalignment">
+                <span><a class="btn btn-secondary" href="scan.html">Rescan</a></span>
+                <span><a class="btn btn-primary" href="main.html">Yes</a></span>
+            </div>
+        </div>
+        
 		<div>
+            <br>
             <p>Don't know how to sort <span id="success-item-name"></span>?</p>
             <script>
                 _recollect_config = { area: "Vancouver", name: "wizard" };
+                
                 </script>
-            <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
-		</div>
-		<div class="listalignment">
-			<span><a class="btn btn-secondary" href="scan.html">Rescan</a></span>
-			<span><a class="btn btn-primary" href="main.html">Continue</a></span>
+            <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8" ></script>
 		</div>
     </div>
     
@@ -93,6 +98,7 @@
 	<!----------------------------------------------->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
 	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous">
 	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
@@ -100,9 +106,13 @@
 
 	<!--------------------------------------------------------------------->
 	<!-- JS files: Your own JavaScript functions included here    -->
-	<!--------------------------------------------------------------------->
+    <!--------------------------------------------------------------------->
+    <script src="./private/js/dk.js"></script>
+    <script src="./private/js/success.js"></script>
 	<script src="./private/js/scan.js"></script>
-	<script src="./API/html5-qrcode.min.js"></script>
+    <script src="./API/html5-qrcode.min.js"></script>
+
+    
 </body>
 
 </html>
