@@ -111,5 +111,13 @@ $(document).ready(function () {
         console.log(result)
     }
 
+    // $('#hello').click(myFunc());
 
+    // function myFunc() {
+    //     console.log('hello');
+    // }
+
+    $( "#hello" ).click(function() {
+        console.log("hello");
+      });
 });
