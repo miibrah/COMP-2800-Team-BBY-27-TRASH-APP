@@ -97,6 +97,7 @@ color: white;
 margin-left: 4px;
 }
 
+
 @media only screen and (max-width: 500px) {
     .container{
       background-image: url('/private/images/login-bg-waterfall.jpg');
@@ -131,7 +132,7 @@ margin-left: 4px;
       .card{
         height: 370px;
 
-        margin-top: 30%;
+        margin-top: 20%;
         margin-bottom: auto;
         width: 400px;
         background-color: rgba(0,0,0,0.5) !important;
