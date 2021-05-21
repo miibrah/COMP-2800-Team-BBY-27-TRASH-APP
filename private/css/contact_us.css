@@ -196,11 +196,10 @@ a:hover {
   #toTopBtn {
     position: fixed;
     bottom: 15%;
-    right: 0%;
+    right: 5%;
     z-index: 98;
-    padding: 19px;
-    color: rgb(200, 202, 62);
-    /* background-color: rgb(200, 202, 62); */
+    padding: 21px;
+    background-color: rgb(200, 202, 62);
 }
 
 .js .cd-top--fade-out {
@@ -235,7 +234,8 @@ a:hover {
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
 }
 
-.svg-manip {
-    float: right;
-    margin-right: 10%;
+.p-3 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 5em;
 }

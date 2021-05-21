@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
+    <!-- Optional styles and scripts of your own -->
+    <link rel="stylesheet" href="./private/css/style.css" />
+    <link rel="stylesheet" href="./private/css/contact_us.css">
+    <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
+        <div>
+            <a href="./landing.html" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="./private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2"
+                    id="image_logo">
+                <!-- Logo Text -->
+                <span class="text-uppercase font-weight-bold navbar-brand">Trash Wise</span>
+            </a>
+        </div>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm"
+                            type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Tailwind form credit to https://developer.mongodb.com/how-to/create-contact-form-mongodb-stitch-webhooks-service-mailgun/-->
+
+    <div class="text-center bg-white">
+        <h1 class="display-4">Have questions?</h1>
+        <p class="lead">Fill out the form below and we will reach out to you as soon as possible.</p>
+    </div>
+    <br>
+    <br>
+    <div class="p-3">
+        <form class="w-full max-w-sm" id = "basic-form" method="post" action="/">
+            <div class="md:flex md:justify-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="name">
+                        Name
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input
+                        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                        name="name" id="name" type="text" placeholder="Name" minlength="3" required>
+                </div>
+            </div>
+            <div class="md:flex md:justify-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
+                        Email
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input
+                        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                        id="email" type="text" placeholder="email@domain.com" name="email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+                </div>
+            </div>
+            <div class="md:flex md:justify-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="message">
+                        Message
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <textarea
+                        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                        name="message" id="message" type="text" placeholder="Message" required minlength="40"></textarea>
+                </div>
+            </div>
+            <div class="md:flex md:justify-center">
+                <div class="md:w-1/3"></div>
+                <div class="md:w-2/3">
+                    <button
+                        class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+        data-abc="true"></a>
+    </div>
+    <nav class="nav">
+        <a href="./about-us.html" class="navlink">
+            <i class="far fa-smile fa-3x"></i>
+            <span class="navtext">About Us</span>
+        </a>
+        <a href="./landing.html" class="navlink">
+            <i class="fas fa-home fa-3x"></i>
+            <span class="navtext">Home</span>
+        </a>
+        <a href="./quiz.html" class="navlink">
+            <i class="fas fa-question-circle fa-3x"></i>
+            <span class="navtext">Quiz</span>
+        </a>
+    </nav>
+    <!---- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <!-- Load our React component. -->
+    <script src="./my-app/src/search.js"></script>
+
+    <!----------------------------------------------->
+    <!-- JS: Boostrap, Firebase, API related    -->
+    <!----------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+
+    <!--------------------------------------------------------------------->
+    <!-- JS files: Your own JavaScript functions included here    -->
+    <!--------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </script>
+
+
+</body>
+
+</html>

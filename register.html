@@ -38,8 +38,8 @@
         <div>
             <a href="#" class="navbar-brand">
                 <!-- Logo Image -->
-                <img src="/private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2"
-                    id="image_logo">
+                <!-- <img src="/private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2"
+                    id="image_logo"> -->
                 <!-- Logo Text -->
                 <span class="text-uppercase font-weight-bold navbar-brand">Trash Wise</span>
             </a>
@@ -48,23 +48,21 @@
             data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" ><i class="fas fa-qrcode"></i> QR Scanner</a>
+                <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" ><i class="far fa-user"></i>
+                <li class="nav-item"><a class="nav-link" href="main.html"><i class="far fa-user"></i>
                         Profile</a>
                 </li>
                 <!-- <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
                 </li> -->
-
-                <!-- search bar  -->
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <form class="form-inline">
                         <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
                             placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm"
-                        type="submit" >Search</button>
+                            type="submit">Search</button>
                     </form>
-                </li> -->
+                </li>
             </ul>
         </div>
     </nav>
@@ -81,7 +79,7 @@
 
     -->
     <!-- <div class="container" style = "margin-top: -167px; z-index: 1;"> -->
-    <div id = "login" class="container" style = "margin-top: -60px;">
+    <div class="container" style = "margin-top: -60px;">
 
         <div class="d-flex justify-content-center h-100">
 
@@ -89,7 +87,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h3>Sign In</h3>
+                    <h3>Sign Up</h3>
                     <div class="d-flex justify-content-end social_icon">
                         <span><i class="fab fa-facebook-square"></i></span>
                         <span><i class="fab fa-google-plus-square"></i></span>
@@ -97,98 +95,42 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form id = "login-form">
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input id = "emailLogin" type="text" autocomplete = "off" class="form-control" placeholder="username">
-                            
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input id = "passwordLogin" type="password" autocomplete = "off" class="form-control" placeholder="password">
-                        </div>
-                        <!-- <div class="row align-items-center remember">
-                            <input id = "remember" type="checkbox">Remember Me
-                        </div> -->
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn btn-light" style = "margin-top: 10px;">
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex justify-content-center links" style = "margin-bottom: 10%;">
-                        Don't have an account?<a onclick = "signUp()" id = "sign-up" href="#">Sign Up</a>
-                    </div>
-                    <!-- <div class="d-flex justify-content-center">
-                        <a href="#">Forgot your password?</a>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div id = "register" class="container" style = "margin-top: -60px; display: none;">
-
-        <div class="d-flex justify-content-center h-100">
-
-         
-
-            <div class="card">
-                <div class="card-header">
-                    <h3 id = "hello">Sign Up</h3>
-                    <!-- <div class="d-flex justify-content-end social_icon">
-                        <span><i class="fab fa-facebook-square"></i></span>
-                        <span><i class="fab fa-google-plus-square"></i></span>
-                        <span><i class="fab fa-twitter-square"></i></span>
-                    </div> -->
-                </div>
-                <div class="card-body">
                     <form id = "reg-form">
                         <div class="input-group form-group">
-                            <!-- <div class="input-group-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div> -->
-                            <input id = "email" type="text" autocomplete = "off" class="form-control" placeholder="Enter username">
+                            </div>
+                            <input id = "email" type="text" autocomplete = "off" class="form-control" placeholder="username">
                             
                         </div>
                         <div class="input-group form-group">
-                            <!-- <div class="input-group-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div> -->
-                            <input id = "password" type="password" autocomplete = "off" class="form-control" placeholder="Enter password">
+                            </div>
+                            <input id = "password" type="password" autocomplete = "off" class="form-control" placeholder="password">
                         </div>
-                        <!-- <div class="row align-items-center remember">
+                        <div class="row align-items-center remember">
                             <input id = "remember" type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                            <input id = "submit" type="submit" value="Login" class="btn float-right login_btn btn-light">
+                        </div>
+                        <!-- <div class="form-group">
+                            <input id = "submit2" type="submit" value="Login" class="btn float-right login_btn btn-light">
                         </div> -->
-                        <div id = "alerts" style = "color: rgb(209, 44, 44)">
-                            
-                        </div>
-                        <div class="form-group" style = "margin-top: 10%;">
-                            <input id = "submit" type="submit" value="Create an account" class="btn float-right login_btn btn-light" style = "width: 50%;">
-                        </div>
                     </form>
                 </div>
                 <div class="card-footer">
-                    <!-- <div class="d-flex justify-content-center links">
+                    <div class="d-flex justify-content-center links">
                         Don't have an account?<a id = "sign-up" href="#">Sign Up</a>
-                    </div> -->
-                    <div class="d-flex">
-                        <!-- <a href="#">Forgot your password?</a> -->
-                        <button type="button" class="btn btn-light" style = "margin-bottom: 10%;"><a style = "color: black" href="/login.html">Back</a></button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Forgot your password?</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-   
     
     <!-- Footer  -->
     <nav class="nav">
@@ -207,10 +149,7 @@
     </nav>
     
 
- 
-    </body>
-
-       <!----------------------------------------------->
+    <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
@@ -224,10 +163,4 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  -->
     <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
     <script src = "/private/js/login.js"></script>
-    <script>
-        function signUp() {
-            document.getElementById("login").style.display = "none";
-            document.getElementById("register").style.display = "block";
-        }
-    </script>
- </html>
+    </body>
