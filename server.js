@@ -157,21 +157,7 @@ app.get('/landing.html', function(req, res){
 });
 
 
-app.get('/quiz.html', function(req, res){
 
-    fs.readFile("./quiz.html", function (error, pgRes) {
-        if (error) {
-            res.writeHead(404);
-            res.write(msg404);
-        } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.write(pgRes);
-        }
-        
-
-        res.end();
-    });
-});
 
 app.get('/contact_us.html', function(req, res){
 
@@ -381,6 +367,21 @@ app.get('/game.html', function(req, res){
     });
 });
 
+app.get('/quiz.html', function(req, res){
+
+    fs.readFile("./quiz.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
 app.get('/highscores.html', function(req, res){
 
     fs.readFile("./highscores.html", function (error, pgRes) {
@@ -402,8 +403,8 @@ app.use(express.json())
 
 app.use(routes) 
 
-// Sam msg: I commented connectDB() b/c we seemed to have been getting errors when we hosted locally b/c of it. 
-// connectDB();
+
+//  connectDB();
 
 
 app.listen(Port, () => console.log ('Server started'));
