@@ -13,7 +13,7 @@
   <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
     <!-- Optional styles and scripts of your own -->
 	<link rel="stylesheet" href="./private/css/style.css"/>
-  <link rel = "stylesheet" href = "./private/css/quizz.css">
+  <link rel = "stylesheet" href = "./private/css/highscore.css">
   <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
   
 </head>
@@ -79,13 +79,12 @@
       </div>
 
       <div class="container">
-        <div id="home" class="flex-center flex-column">
-          <h1>Quick Quiz</h1>
-          <a class="btn" href="/game.html">Play</a>
-          <a class="btn" href="/highscores.html">High Scores</a>
+        <div id="highScores" class="flex-center flex-column">
+          <h1 id="finalScore">High Scores</h1>
+          <ul id="highScoresList"></ul>
+          <a class="btn" href="/">Go Home</a>
         </div>
       </div>
-
         <!-- credit for html, css, and js related to "return to top button" functionality
         goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
         -> line 102
@@ -129,8 +128,9 @@
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    
-   
+
+    <script src="./private/js/highscores.js"> </script>
+
 
 
 </body>

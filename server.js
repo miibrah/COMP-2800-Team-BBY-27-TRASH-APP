@@ -20,9 +20,11 @@ app.use('/private/css', express.static('./private/css'));
 app.use('/private/js', express.static('./private/js'));
 
 
+
 app.get('/landing', function (request, response) {
     response.sendFile(__dirname + './landing.html');
 });
+
 
 // APP GETS
 app.get('/', function (req, res) {
@@ -138,11 +140,57 @@ app.get('/quiz.html', function(req, res){
 });
 
 
+app.get('/end.html', function(req, res){
+
+    fs.readFile("./end.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+        
+
+        res.end();
+    });
+});
+app.get('/game.html', function(req, res){
+
+    fs.readFile("./game.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
+
+app.get('/highscores.html', function(req, res){
+
+    fs.readFile("./highscores.html", function (error, pgRes) {
+        if (error) {
+            res.writeHead(404);
+            res.write(msg404);
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(pgRes);
+        }
+
+        res.end();
+    });
+});
 
 
 
 app.use(express.json()) 
+
 app.use(routes) 
+
 
 
 connectDB();
