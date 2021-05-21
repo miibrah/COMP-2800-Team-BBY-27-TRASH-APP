@@ -19,12 +19,19 @@
   },
   "homepage": "https://github.com/kyulyeon/COMP-2800-Team-BBY-27-TRASH-APP#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^9.0.2",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "jquery": "^3.6.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.12.9",
+    "mongoose": "^5.12.10",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.1"
   }
 }
