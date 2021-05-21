@@ -220,7 +220,7 @@ const contactusSchema = {
  })
 
 
- module.exports = contactusSchema
+ module.exports = contactusSchema;
 
 app.get('/login.html', function(req, res){
 
@@ -353,7 +353,7 @@ app.get('/logout', function(req,res){
 app.use(express.json()) 
 app.use(routes) 
 
-
+// Sam msg: I commented connectDB() b/c we seemed to have been getting errors when we hosted locally b/c of it. 
 connectDB();
 
 
