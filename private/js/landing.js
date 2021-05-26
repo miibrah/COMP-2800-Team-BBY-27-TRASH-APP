@@ -58,9 +58,6 @@ $(document).ready(function() {
                             console.log("SUCCESS:", data);
                             username = data['msg'];
                             console.log(username);
-                            db.highscores.insertOne({
-                              username: data['msg']
-                            })
                         },
                         error: function(jqXHR, textStatus, errorThrown) {
                             // $("#p1").text(jqXHR.statusText);
