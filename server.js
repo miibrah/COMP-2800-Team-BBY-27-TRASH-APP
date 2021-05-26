@@ -48,7 +48,7 @@ app.use(session(
         saveUninitialized: true 
 }));
 
-
+var usernameKEY= "";
 
 app.get('/landing', function (request, response) {
     response.sendFile(__dirname + './landing.html');
@@ -62,7 +62,7 @@ app.get('/', function (req, res) {
     res.set('Server', 'Wazubi Engine');
     res.set('X-Powered-By', 'Magical Pixies');
 
-    fs.readFile("./landing.html", function (error, pgRes) {
+    fs.readFile("./login.html", function (error, pgRes) {
         if (error) {
             res.writeHead(404);
             res.write(msg404);
@@ -279,6 +279,8 @@ app.post('/api/register', async (req, res) => {
         req.session.save(function(err) {
             // session saved
         });
+
+        usernameKEY = username;
         
     } catch(error) {
         if (error.code === 11000) {
@@ -315,6 +317,8 @@ app.post('/api/login', async (req, res) => {
         req.session.email = username;
         req.session.save(function(err) {
             // session saved
+
+        usernameKEY = username;
         });
 
         return res.json({ status: 'ok', data: token });
@@ -397,7 +401,12 @@ app.get('/highscores.html', function(req, res){
     });
 });
 
+app.get('/testme', function(req,res){
+    res.setHeader('Content-Type', 'application/json');
+    let userEmail = req.session.email;
+    res.send({ msg: usernameKEY });
 
+})
 
 app.use(express.json()) 
 
