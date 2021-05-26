@@ -6,7 +6,7 @@ const User = require('./model/user');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const session = require('express-session');
-
+const highscore = require('./model/highscores');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -408,14 +408,27 @@ app.get('/testme', function(req,res){
 
 })
 
+app.post('/api/create', async (req, res) => {
+    const record = req.body;
+    console.log(record);
+
+    // * res is from MongoDB database server
+    const response = await highscore.create(record);
+
+    console.log(response);
+
+    res.json({ status: 'ok' });
+});
+
+
 app.use(express.json()) 
 
 app.use(routes) 
 
 
 //  connectDB();
-
-
+console.log('highscore require => ', highscore);
+console.log('highscore from mongoose => ', mongoose.model('HighscoreModel'));
 app.listen(Port, () => console.log ('Server started'));
 
 
