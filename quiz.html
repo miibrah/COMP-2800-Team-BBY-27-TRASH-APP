@@ -12,10 +12,76 @@
 	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
     <!-- Optional styles and scripts of your own -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./private/css/style.css"/>
   <link rel = "stylesheet" href = "./private/css/quizz.css">
   <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
 
+    <!-- text animation Credits goes to https://codepen.io/cbanlawi/pen/MWbemYP -->
+  <style>
+    body {
+  
+  background: #f4d03f;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.anim {
+  font-family: "Archivo Black", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.words {
+  color: #f4d03f;
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+  </style>
 </head>
 
 <body>
@@ -23,15 +89,12 @@
   <!-------------------------------------->
   <!-- The following is HTML for layout -->
   <!-------------------------------------->
-
   <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
     <div>
       <a href="./landing.html" class="navbar-brand">
         <!-- Logo Image -->
-        <img src="./private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2"
+        <img src="private/images/LOGO.png" width="65" alt="" class="d-inline-block align-middle mr-2 img-fluid"
           id="image_logo">
-        <!-- Logo Text -->
-        <span class="text-uppercase font-weight-bold navbar-brand">Trash Wise</span>
       </a>
     </div>
     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
@@ -44,56 +107,35 @@
         <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
         </li>
         <li class="nav-item">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2 bg-transparent btn-outline-dark btn-sm" type="search"
-              placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark my-2 my-sm-0 bg-transparent btn-sm" type="submit">Search</button>
-          </form>
-        </li>
       </ul>
     </div>
   </nav>
 
+  <!-- text animation Credits goes to https://codepen.io/cbanlawi/pen/MWbemYP -->
+  <div class="anim">
+    <div class="words word-1">
+      <span>Q</span>
+      <span>U</span>
+      <span>I</span>
+      <span>Z</span>
+    </div>
+    
+    <div class="words word-2">
+      <span>T</span>
+      <span>I</span>
+      <span>M</span>
+      <span>E</span>
+    </div>
+    </div>
+
   <!-- Content -->
 
-  <div class="pos-f-t sticky-top" id="TOC">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-info p-3 anchor-parent">
-        <h4 class="text-white">List of page anchors</h4>
-
-        <!-- List of anchors; add as many as you want and link them to the appropiate heading by putting id of heading inside anchor href.
-            data-toggle and data-target attributes closes navbar menu when anchor is clicked-->
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading1">Why recycle?</a>
-        </div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading2">Rule of thumb's for
-            proper recycling</a></div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading3">Non-recyclable
-            items</a></div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading4">Recycling
-            Misconceptions</a></div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading5">Take-bake program</a>
-        </div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading6">Don't know what goes
-            where? Use this tool!</a></div>
-
-      </div>
-    </div>
-    <nav class="navbar navbar-dark bg-info">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span style="color: white;">Table of Contents</span>
-      </button>
-    </nav>
-  </div>
-
-  <div class="container">
     <div id="home" class="flex-center flex-column">
-      <h1>Quick Quiz</h1>
       <a class="btn" href="/game.html">Play</a>
       <a class="btn" href="/highscores.html">High Scores</a>
-    </div>
   </div>
+
+  
 
   <!-- credit for html, css, and js related to "return to top button" functionality
         goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
