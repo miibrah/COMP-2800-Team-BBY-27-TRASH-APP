@@ -259,9 +259,73 @@ h3 {
 
  #share-container {
   position: fixed;
-  bottom: 10%;
+  bottom: 0%;
   right: 2%;
   z-index: 98;
   padding: 10px;
   /* background-color: rgb(200, 202, 62); */
+}
+
+
+/* body{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: "Arial";
+} */
+
+.share{
+  width: 80px;
+  height: 80px;
+  margin: 5em auto;
+  background: rgb(10, 107, 53);
+  text-align: center;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.share a{
+  display: inline-block;
+  width: 40px;
+  height: 80px;
+  float: left;
+  position: relative;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.share:after{
+  content: "Share";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  /* color: #333;  */
+  color: white;
+  background: rgb(10, 107, 53);
+}
+
+.share a.fb{
+  background: #3c5b9b url(https://cdn1.iconfinder.com/data/icons/social-media-icons-2/83/facebook_64x83.png) no-repeat center;
+  top: -200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.share a.tw{
+  background: black url(/private/images/tumblr5.png) no-repeat center;
+  bottom: -200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.share:hover a.fb{
+  top: 0;
+}
+
+.share:hover a.tw{
+  bottom: 0;
 }

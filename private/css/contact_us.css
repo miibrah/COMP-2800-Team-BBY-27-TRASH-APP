@@ -239,3 +239,7 @@ a:hover {
     width: 50%;
     padding-bottom: 5em;
 }
+
+.lead {
+    padding: 5px;
+}
