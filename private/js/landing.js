@@ -42,33 +42,33 @@
 //         console.log("hello sessio tester");
 //     }
 
-$(document).ready(function() {
-    var username = "anonymous";
-    $("#test").click(function(e) {
-        e.preventDefault();
-        $.ajax({
-            //            url: "/getJSONThing",
-                        url: "/testme",
-                        dataType: "json",
-                        type: "GET",
-                        success: function(data) {
-                            // $("#p1").text(data['msg']);
-                            //$("#p1").text(data['firstName']);
-                            //eval(data['greeting']);
-                            console.log("SUCCESS:", data);
-                            username = data['msg'];
-                            console.log(username);
-                        },
-                        error: function(jqXHR, textStatus, errorThrown) {
-                            // $("#p1").text(jqXHR.statusText);
-                            console.log("ERROR:", jqXHR, textStatus, errorThrown);
-                        }
-            
-                });
-        }
-    );
+                // $(document).ready(function() {
+                //     var username = "anonymous";
+                //     $("#test").click(function(e) {
+                //         e.preventDefault();
+                //         $.ajax({
+                //             //            url: "/getJSONThing",
+                //                         url: "/testme",
+                //                         dataType: "json",
+                //                         type: "GET",
+                //                         success: function(data) {
+                //                             // $("#p1").text(data['msg']);
+                //                             //$("#p1").text(data['firstName']);
+                //                             //eval(data['greeting']);
+                //                             console.log("SUCCESS:", data);
+                //                             username = data['msg'];
+                //                             console.log(username);
+                //                         },
+                //                         error: function(jqXHR, textStatus, errorThrown) {
+                //                             // $("#p1").text(jqXHR.statusText);
+                //                             console.log("ERROR:", jqXHR, textStatus, errorThrown);
+                //                         }
+                            
+                //                 });
+                //         }
+                //     );
 
-});
+                // });
 
 /**
  * 

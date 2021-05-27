@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Quicksand', sans-serif;
+  background-color: rgb(183, 196, 105);
 }
 
 .navbar span {
@@ -171,7 +172,7 @@ h3 {
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.4)
   ),
-  url(https://www.pngkit.com/png/detail/177-1779995_recycling-symbol-cartoon.png);
+  url(/private/images/recyc.png);
   border-radius: 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,3 +241,27 @@ h3 {
     font-size: 18px;
   }
  }
+
+ .share-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  max-height: 68%;
+  max-height: 50px;
+ }
+
+ #share-container {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  z-index: 98;
+  padding: 10px;
+  /* background-color: rgb(200, 202, 62); */
+}
