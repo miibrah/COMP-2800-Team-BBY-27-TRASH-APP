@@ -86,8 +86,6 @@ Eric Kwon.
 ├── Procfile
 ├── README.md
 ├── about-us.html
-├── brochure-template.html
-├── cheetos.html
 ├── compost.html
 ├── contact_us.html
 ├── dev.txt
@@ -95,6 +93,7 @@ Eric Kwon.
 ├── end.html
 ├── game.html
 ├── highscores.html
+├── item.html
 ├── landing.html
 ├── login.html
 ├── model
@@ -105,7 +104,6 @@ Eric Kwon.
 ├── private
 │   ├── css
 │   │   ├── about-us.css
-│   │   ├── brochure-template.css
 │   │   ├── compost.css
 │   │   ├── contact_us.css
 │   │   ├── game.css
@@ -115,6 +113,7 @@ Eric Kwon.
 │   │   ├── recycle.css
 │   │   ├── style.css
 │   │   ├── styles.css
+│   │   ├── toTopBtn.css
 │   │   └── trash.css
 │   ├── images
 │   │   ├── Eric-Avatar.png
@@ -141,26 +140,15 @@ Eric Kwon.
 │   │   ├── take-back7.png
 │   │   ├── take-back8.png
 │   │   ├── take-back9.png
-│   │   ├── temp.png
 │   │   ├── temp2.png
-│   │   ├── tempp.png
 │   │   ├── trash-img.png
-│   │   ├── ttt.png
-│   │   ├── tumblr.png
-│   │   ├── tumblr2.png
-│   │   ├── tumblr3.png
-│   │   ├── tumblr4.png
 │   │   └── tumblr5.png
 │   ├── js
-│   │   ├── brochure-template.js
 │   │   ├── compost.js
-│   │   ├── demo.js
-│   │   ├── dk.js
 │   │   ├── elevator.js
 │   │   ├── end.js
 │   │   ├── game.js
 │   │   ├── highscores.js
-│   │   ├── landing.js
 │   │   ├── login.js
 │   │   ├── recycle.js
 │   │   ├── scan.js
