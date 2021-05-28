@@ -11,7 +11,8 @@ body {
 }
 
 #image_logo {
-	border-radius: 30%;
+  width: 120px;
+  height: auto;
 }
 
 #palette {

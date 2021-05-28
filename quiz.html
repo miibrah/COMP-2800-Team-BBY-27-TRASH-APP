@@ -12,68 +12,130 @@
 	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
     <!-- Optional styles and scripts of your own -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./private/css/style.css"/>
   <link rel = "stylesheet" href = "./private/css/quizz.css">
   <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
 
+    <!-- text animation Credits goes to https://codepen.io/cbanlawi/pen/MWbemYP -->
+  <style>
+    body {
+  
+  background: #f4d03f;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.anim {
+  font-family: "Archivo Black", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.words {
+  color: #f4d03f;
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+  </style>
 </head>
 
 <body>
 
-    <!-------------------------------------->
-    <!-- The following is HTML for layout -->
-    <!-------------------------------------->
-
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
-      <div>
-        <a href="./landing.html" class="navbar-brand">
-          <!-- Logo Image -->
-          <img src="./private/images/Favicon.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
-          <!-- Logo Text -->
-          <span class="text-uppercase font-weight-bold navbar-brand">Trash Wise</span>
-        </a>
-      </div>
-      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    
-    <!-- Content -->
-      <div class="container">
-        <div id="home" class="flex-center flex-column">
-          <h1>Quiz Time</h1>
-          <a class="btn" href="/game.html">Play</a>
-          <a class="btn" href="/highscores.html">High Scores</a>
-        </div>
-        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading6">Don't know what goes
-            where? Use this tool!</a></div>
-
-      </div>
+  <!-------------------------------------->
+  <!-- The following is HTML for layout -->
+  <!-------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
+    <div>
+      <a href="./landing.html" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="private/images/LOGO.png" width="65" alt="" class="d-inline-block align-middle mr-2 img-fluid"
+          id="image_logo">
+      </a>
     </div>
-    <nav class="navbar navbar-dark bg-info">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span style="color: white;">Table of Contents</span>
-      </button>
-    </nav>
-  </div>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-qrcode"></i> QR Scanner</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact_us.html"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+        <li class="nav-item">
+      </ul>
+    </div>
+  </nav>
 
-  <div class="container">
+  <!-- text animation Credits goes to https://codepen.io/cbanlawi/pen/MWbemYP -->
+  <div class="anim">
+    <div class="words word-1">
+      <span>Q</span>
+      <span>U</span>
+      <span>I</span>
+      <span>Z</span>
+    </div>
+    
+    <div class="words word-2">
+      <span>T</span>
+      <span>I</span>
+      <span>M</span>
+      <span>E</span>
+    </div>
+    </div>
+
+  <!-- Content -->
+
     <div id="home" class="flex-center flex-column">
-      <h1>Quick Quiz</h1>
       <a class="btn" href="/game.html">Play</a>
       <a class="btn" href="/highscores.html">High Scores</a>
-    </div>
   </div>
+
+  
 
   <!-- credit for html, css, and js related to "return to top button" functionality
         goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
