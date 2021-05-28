@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>quiz</title>
-    <!-- Bootstrap for Mobile-first, and JQuery -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>quiz</title>
+  <!-- Bootstrap for Mobile-first, and JQuery -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
-    <!-- Optional styles and scripts of your own -->
-	<link rel="stylesheet" href="./private/css/style.css"/>
-  <link rel = "stylesheet" href = "./private/css/highscore.css">
+  <!-- Optional styles and scripts of your own -->
+  <link rel="stylesheet" href="./private/css/style.css" />
+  <link rel="stylesheet" href="./private/css/highscore.css">
   <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
-  
+
 </head>
 
 <body>
@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-    <!-- Content -->
+  <!-- Content -->
 
       <div class="container">
         <div id="highScores" class="flex-center flex-column">
@@ -61,17 +61,20 @@
         </div>
         </div>
       </div>
-        <!-- credit for html, css, and js related to "return to top button" functionality
+    </div>
+  </div>
+  <!-- credit for html, css, and js related to "return to top button" functionality
         goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
         -> line 102
         -->
-        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
-    </div>
-    <nav class="nav">
-        <a href="./about-us.html" class="navlink">
-          <i class="far fa-smile fa-3x"></i>
-          <span class="navtext">About Us</span>
-      </a>
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+    data-abc="true"></a>
+  </div>
+  <nav class="nav">
+    <a href="./about-us.html" class="navlink">
+      <i class="far fa-smile fa-3x"></i>
+      <span class="navtext">About Us</span>
+    </a>
     <a href="./landing.html" class="navlink">
       <i class="fas fa-home fa-3x"></i>
       <span class="navtext">Home</span>
@@ -81,33 +84,23 @@
       <span class="navtext">Quiz</span>
     </a>
   </nav>
-        <!---- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </script>
 
-  <!-- Load our React component. -->
-  <!-- <script src="./my-app/src/search.js"></script>
+  <!----------------------------------------------->
+  <!-- JS: Boostrap, Firebase, API related    -->
+  <!----------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
 
-  </script> -->
+  <!--------------------------------------------------------------------->
+  <!-- JS files: Your own JavaScript functions included here    -->
+  <!--------------------------------------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!----------------------------------------------->
-    <!-- JS: Boostrap, Firebase, API related    -->
-    <!----------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
-
-    <!--------------------------------------------------------------------->
-    <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-
-    <script src="./private/js/highscores.js"> </script>
-
-
+  <script src="./private/js/highscores.js"> </script>
 
 </body>
+
 </html>

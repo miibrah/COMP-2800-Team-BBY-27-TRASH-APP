@@ -3,33 +3,6 @@
 $(document).ready(function () {
 
     console.log("hello");
-    // $("#submit").click(function () {
-
-    //     $.ajax({
-    //         url: "/authenticate",
-    //         type: "POST",
-    //         dataType: "JSON",
-    //         data: {
-    //             email: $("#email").val(),
-    //             password: $("#password").val()
-    //         },
-    //         success: function (data) {
-
-    //             if (data['status'] == "success") {
-    //                 window.location.replace("/landing");
-    //             } else {
-    //                 $("#errorMsg").html(data['msg']);
-    //             }
-
-    //         },
-    //         error: function (jqXHR, textStatus, errorThrown) {
-    //             $("body").text(jqXHR.statusText);
-    //             console.log("asdasdasjaskdjhaksdhakjdshakjdh");
-    //         }
-    //     });
-
-    // });
-
     const form = document.getElementById('reg-form');
     form.addEventListener('submit', registerUSER);
 
@@ -58,19 +31,6 @@ $(document).ready(function () {
             window.location.replace("/landing.html");
         } else {
             alert(result.error);
-            
-            // let message = "<p>";
-            // message += result['error'];
-            // message += "</p>"
-
-            // var txt = '{"name":"John", "age":30, "city":"New York"}'
-            // var obj = JSON.parse(txt);
-            // document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
-
-            // let message = result.error;
-
-            // let testM = JSON.parse(message);
-            // let testM = JSON.parse(result);
             let tryMe = 'try again';
             document.getElementById('alerts').innerText = tryMe;
         }
@@ -110,12 +70,6 @@ $(document).ready(function () {
         }
         console.log(result)
     }
-
-    // $('#hello').click(myFunc());
-
-    // function myFunc() {
-    //     console.log('hello');
-    // }
 
     $( "#hello" ).click(function() {
         console.log("hello");

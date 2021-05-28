@@ -14,14 +14,16 @@
     <!-- Optional styles and scripts of your own -->
 	<link rel="stylesheet" href="./css/style.css"/>
   <link rel = "stylesheet" href = "./css/trash.css">
+  <link rel = "stylesheet" href = "./private/css/toTopBtn.css">
 
 </head>
 
 <body>
 
-    <!-------------------------------------->
-    <!-- The following is HTML for layout -->
-    <!-------------------------------------->
+	<!-------------------------------------->
+	<!-- The following is HTML for layout -->
+  <!-- Credit to https://getbootstrap.com/docs/4.0/components/navbar/ -->
+  <!-------------------------------------->
 
     <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
         <div>
@@ -121,7 +123,6 @@
               </script>
           <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
 
-
             <br>
 
             <b id = "heading6"> How can I help? </b>
@@ -170,7 +171,6 @@
             <img class = "image" src="images/not-accepted-recyclable-items-in-garbage.jpg" alt = "Not Accepted Food Scraps">
             </div>
 
-
             <div class="footer">
               <div class="do-the-thing">
                 <div class = "elevator" id = "toTopBtn">
@@ -185,9 +185,6 @@
             <p class = "credit">The information on this page was sourced from the <a href="https://www.epa.gov/trash-free-waters/impacts-mismanaged-trash">United States Environmental Protection Agency</a>.</p>
             <p class = "credit">The photos on this page was sourced from the <a href="https://vancouver.ca/home-property-development/garbage.aspx#redirect">City of Vancouver</a>.</p>
             <br><br><br><br>
-          
-
-
        
         </div>
 
@@ -214,14 +211,6 @@
             <span class="navtext">Quiz</span>
         </a>
       </nav>
-        <!---- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-
-  <!-- Load our React component. -->
-  <script src="./my-app/src/search.js"></script>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
