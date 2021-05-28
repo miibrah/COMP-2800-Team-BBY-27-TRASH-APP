@@ -75,6 +75,7 @@
   }
   
   /* BUTTONS */
+
   .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
@@ -101,6 +102,7 @@
   }
   
   /* FORMS */
+  
   form {
     width: 100%;
     display: flex;

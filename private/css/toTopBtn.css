@@ -1,68 +1,17 @@
-#content {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-}
-
-#title {
-    grid-area: 1/ 1/ span 1/ span 1;
-    background-color:rgb(103, 148, 54);
-    color: white;
-    font-size: 2.2em;
-    text-align: center;
-}
-
-#body {
-    grid-area: 2/ 1/ span 1/ span 1;
-    background-color: white;
-    color: rgb(103, 148, 54);
-}
-
-#body > b {
-    padding: 5px 0 2px 5px;
-    margin: 0px;
-    font-size: 2em;
-}
-
-#body > p {
-    padding: 5px 0 2px 5px;
-    margin: 0px;
-    color: black;
-}
-
-.anchor-parent > a {
-    color: white;
-    display: block;
-}
-
-#TOC {
-    color:white;
-}
-
-a {
-    text-decoration: none;
-}
-a:link, a:visited {
-    color: white;
-}
-a:hover {
-    color: black;
-}
-
-
 /** 
     credit for html, css, and js related to "return to top button" functionality
     goes to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
     --> lines 9 through 59 through 98
 **/
 
-  #toTopBtn {
+#toTopBtn {
     position: fixed;
     bottom: 15%;
-    right: 5%;
+    right: 0%;
     z-index: 98;
-    padding: 21px;
-    background-color: rgb(200, 202, 62);
+    padding: 19px;
+    color: rgb(200, 202, 62);
+    /* background-color: rgb(200, 202, 62); */
 }
 
 .js .cd-top--fade-out {
@@ -95,4 +44,9 @@ a:hover {
     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
     background-color: hsla(5, 76%, 62%, .8);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+.svg-manip {
+    float: right;
+    margin-right: 10%;
 }

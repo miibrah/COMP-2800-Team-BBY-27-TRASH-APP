@@ -242,6 +242,13 @@ h3 {
   }
  }
 
+
+ /** 
+  Credit for share button css and html goes to Larry Geams Parangan.
+  https://freefrontend.com/css-social-share-buttons/
+  *lines 252 - 337.
+ **/
+
  .share-button {
   background-color: #4CAF50;
   border: none;
@@ -263,16 +270,7 @@ h3 {
   right: 2%;
   z-index: 98;
   padding: 10px;
-  /* background-color: rgb(200, 202, 62); */
 }
-
-
-/* body{
-  margin: 0;
-  padding: 0;
-  background: #eee;
-  font-family: "Arial";
-} */
 
 .share{
   width: 80px;
@@ -305,7 +303,6 @@ h3 {
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
-  /* color: #333;  */
   color: white;
   background: rgb(10, 107, 53);
 }
