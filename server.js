@@ -57,8 +57,6 @@ app.get('/landing', function (request, response) {
 
 // APP GETS
 app.get('/', function (req, res) {
-    // just being silly but you can change the header response so that it
-    // doesn't say Node.js, but some custom info about your app
     res.set('Server', 'Wazubi Engine');
     res.set('X-Powered-By', 'Magical Pixies');
 
@@ -427,8 +425,6 @@ app.use(routes)
 
 
 //  connectDB();
-console.log('highscore require => ', highscore);
-console.log('highscore from mongoose => ', mongoose.model('HighscoreModel'));
 app.listen(Port, () => console.log ('Server started'));
 
 
