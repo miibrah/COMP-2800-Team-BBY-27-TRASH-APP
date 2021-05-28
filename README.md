@@ -70,3 +70,109 @@ Eric Kwon.
 ## <span id="09">Testing Plan</span>
 
 - See our [Testing Plan](https://docs.google.com/spreadsheets/d/1j3EfSG7hf22q48gSMJvaZjFoDO3xEVFHPV0KPGcTJbM/edit#gid=0) here.
+
+## <span id = "10"> Content </span>
+
+```bash
+.
+├── API
+│   ├── html5-qrcode.min.js
+│   └── routes.js
+├── DB
+│   ├── Question.js
+│   ├── connection.js
+│   └── items.js
+├── Procfile
+├── README.md
+├── about-us.html
+├── brochure-template.html
+├── cheetos.html
+├── compost.html
+├── contact_us.html
+├── dev.txt
+├── elevator.min.js
+├── end.html
+├── game.html
+├── highscores.html
+├── landing.html
+├── login.html
+├── model
+│   ├── highscores.js
+│   └── user.js
+├── package-lock.json
+├── package.json
+├── private
+│   ├── css
+│   │   ├── about-us.css
+│   │   ├── brochure-template.css
+│   │   ├── compost.css
+│   │   ├── contact_us.css
+│   │   ├── game.css
+│   │   ├── highscore.css
+│   │   ├── login.css
+│   │   ├── quizz.css
+│   │   ├── recycle.css
+│   │   ├── style.css
+│   │   ├── styles.css
+│   │   └── trash.css
+│   ├── images
+│   │   ├── Eric-Avatar.png
+│   │   ├── Favicon.png
+│   │   ├── Garsha-Avatar.jpg
+│   │   ├── Misam-Avatar.png
+│   │   ├── Samuel-Avatar.png
+│   │   ├── accepted-garbage-items.jpg
+│   │   ├── login-bg-waterfall.jpg
+│   │   ├── logo.png
+│   │   ├── not-accepted-food-scraps-items-in-garbage.jpg
+│   │   ├── not-accepted-items-in-garbage.jpg
+│   │   ├── not-accepted-recyclable-items-in-garbage.jpg
+│   │   ├── recyc.png
+│   │   ├── recycle1.png
+│   │   ├── recycle2.png
+│   │   ├── recycle3.png
+│   │   ├── take-back1.png
+│   │   ├── take-back2.png
+│   │   ├── take-back3.png
+│   │   ├── take-back4.png
+│   │   ├── take-back5.png
+│   │   ├── take-back6.png
+│   │   ├── take-back7.png
+│   │   ├── take-back8.png
+│   │   ├── take-back9.png
+│   │   ├── temp.png
+│   │   ├── temp2.png
+│   │   ├── tempp.png
+│   │   ├── trash-img.png
+│   │   ├── ttt.png
+│   │   ├── tumblr.png
+│   │   ├── tumblr2.png
+│   │   ├── tumblr3.png
+│   │   ├── tumblr4.png
+│   │   └── tumblr5.png
+│   ├── js
+│   │   ├── brochure-template.js
+│   │   ├── compost.js
+│   │   ├── demo.js
+│   │   ├── dk.js
+│   │   ├── elevator.js
+│   │   ├── end.js
+│   │   ├── game.js
+│   │   ├── highscores.js
+│   │   ├── landing.js
+│   │   ├── login.js
+│   │   ├── recycle.js
+│   │   ├── scan.js
+│   │   ├── success.js
+│   │   └── trash.js
+│   └── music
+│       ├── ding.mp3
+│       └── elevator.mp3
+├── quiz.html
+├── recycle.html
+├── register.html
+├── scan-completed.html
+├── scan.html
+├── server.js
+├── thank_you.html
+└── trash.html
