@@ -6,7 +6,7 @@ const User = require('./model/user');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const session = require('express-session');
-
+const highscore = require('./model/highscores');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -51,7 +51,7 @@ app.use(session(
         saveUninitialized: true 
 }));
 
-
+var usernameKEY= "";
 
 app.get('/landing', function (request, response) {
     response.sendFile(__dirname + './landing.html');
@@ -299,6 +299,8 @@ app.post('/api/register', async (req, res) => {
         req.session.save(function(err) {
             // session saved
         });
+
+        usernameKEY = username;
         
     } catch(error) {
         if (error.code === 11000) {
@@ -335,6 +337,8 @@ app.post('/api/login', async (req, res) => {
         req.session.email = username;
         req.session.save(function(err) {
             // session saved
+
+        usernameKEY = username;
         });
 
         return res.json({ status: 'ok', data: token });
@@ -446,7 +450,25 @@ app.get('/highscores.html', function(req, res){
         res.end();
     });
 });
-    
+
+app.get('/testme', function(req,res){
+    res.setHeader('Content-Type', 'application/json');
+    let userEmail = req.session.email;
+    res.send({ msg: usernameKEY });
+
+})
+
+app.post('/api/create', async (req, res) => {
+    const record = req.body;
+    console.log(record);
+
+    // * res is from MongoDB database server
+    const response = await highscore.create(record);
+
+    console.log(response);
+
+    res.json({ status: 'ok' });
+});
 
 
 app.use(express.json()) 
@@ -455,8 +477,6 @@ app.use(routes)
 
 
 //  connectDB();
-
-
 app.listen(Port, () => console.log ('Server started'));
 
 

@@ -42,8 +42,60 @@
 //         console.log("hello sessio tester");
 //     }
 
-// $(document).ready(function() {
+                // $(document).ready(function() {
+                //     var username = "anonymous";
+                //     $("#test").click(function(e) {
+                //         e.preventDefault();
+                //         $.ajax({
+                //             //            url: "/getJSONThing",
+                //                         url: "/testme",
+                //                         dataType: "json",
+                //                         type: "GET",
+                //                         success: function(data) {
+                //                             // $("#p1").text(data['msg']);
+                //                             //$("#p1").text(data['firstName']);
+                //                             //eval(data['greeting']);
+                //                             console.log("SUCCESS:", data);
+                //                             username = data['msg'];
+                //                             console.log(username);
+                //                         },
+                //                         error: function(jqXHR, textStatus, errorThrown) {
+                //                             // $("#p1").text(jqXHR.statusText);
+                //                             console.log("ERROR:", jqXHR, textStatus, errorThrown);
+                //                         }
+                            
+                //                 });
+                //         }
+                //     );
 
+                // });
 
+/**
+ * 
+ * 
 
-// });
+    function functABC() {
+  
+        return new Promise(function(resolve, reject) {
+          $.ajax({
+            url: '/testme',
+            dataType: "json",
+            type: "GET",
+            success: function(data) {
+              resolve(data) // Resolve promise and go to then()
+            },
+            error: function(err) {
+              reject(err) // Reject the promise and go to catch()
+            }
+          });
+        });
+      }
+      
+      functABC().then(function(data) {
+        // Run this when your request was successful
+        console.log(data)
+      }).catch(function(err) {
+        // Run this when promise was rejected via reject()
+        console.log(err)
+      })
+ */
