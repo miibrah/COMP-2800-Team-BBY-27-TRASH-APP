@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Recycle</title>
+  <!-- Bootstrap for Mobile-first, and JQuery -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/26da0e4274.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="/private/images/Favicon.png">
+    <!-- Optional styles and scripts of your own -->
+	<link rel="stylesheet" href="./private/css/style.css"/>
+  <link rel = "stylesheet" href = "./private/css/recycle.css">
+  <link rel = "stylesheet" href = "./private/css/toTopBtn.css">
+
+  <link rel="shortcut icon" type="image/png" href="./private/images/Favicon.png">
+
+</head>
+
+<body>
+
+    <!-------------------------------------->
+    <!-- The following is HTML for layout -->
+    <!-------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg" id="palette">
+      <div>
+        <a href="./landing.html" class="navbar-brand">
+          <!-- Logo Image -->
+          <img src="private/images/logo.png" width="65" alt="" class="d-inline-block align-middle mr-2" id="image_logo">
+        </a>
+      </div>
+      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"><span class="navbar-toggler-icon "></span></button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="scan.html"><i class="fas fa-qrcode"></i> QR Scanner</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout"><i class="fas fa-sign-in-alt"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-------------------------------------->
+  <!-- The following is HTML for layout -->
+  <!-- Credit to https://getbootstrap.com/docs/4.0/components/navbar/ -->
+  <!-------------------------------------->
+
+
+  <!-- Content -->
+
+  <div class="pos-f-t sticky-top" id="TOC">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-info p-3 anchor-parent">
+        <h4 class="text-white">List of page anchors</h4>
+
+        <!-- List of anchors; add as many as you want and link them to the appropiate heading by putting id of heading inside anchor href.
+            data-toggle and data-target attributes closes navbar menu when anchor is clicked-->
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading1">Why recycle?</a>
+        </div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading2">Rule of thumb's for
+            proper recycling</a></div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading3">Non-recyclable
+            items</a></div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading4">Recycling
+            Misconceptions</a></div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading5">Take-bake program</a>
+        </div>
+        <div data-toggle="collapse" data-target="#navbarToggleExternalContent"><a href="#heading6">Don't know what goes
+            where? Use this tool!</a></div>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span style="color: white;">Table of Contents</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="container">
+    <div id="title">Recycle</div>
+    <div id="body">
+
+      <!-- Write heading under <b></b> tags. Content under <p></p> tags -->
+      <!-- When creating new headings, don't forget to insert new id with corresponing identifier. i.e) heading6, heading20, etc -->
+      <b id="heading1">Why Recycle?</b>
+      <p><b>Reduce Landfills</b></p>
+      <p>In the UK, a quater of their methane emmisions are produced by their landfills. Recycled materials can be
+        repurposed,
+        thereby reducing the ammount of rubbish sent to landfills.
+      </p>
+      <p><b>Save Energy</b></p>
+      <p>
+        Producing new products from raw materials requires considerably more energy then if produced using recycled
+        materials. Furthermore,
+        extracting, refining, transporting, and proccessing new materials requires alot more work then using recycled
+        industy ready materials.
+      </p>
+      <p><b>Protects the planet</b></p>
+      <p>
+        By recycling, we reduce our extracting, refining, and processing of resources (from quaries, mines, and
+        forests), all of which
+        produce water and air polution.
+      </p>
+
+      <b id="heading2">Rule of thumb's for </b> <b>Proper Recycling</b>
+      <div class="container">
+        <div class="image-container">
+          <img class="image" src="./private/images/recycle1.png" alt="green">
+        </div>
+        <p class="image-text"> Clean bottles, cans, cardbaord, and paper are recyclable.</p>
+      </div>
+
+      <div class="container">
+        <div class="image-container">
+          <img class="image" src="./private/images/recycle2.png" alt="red">
+        </div>
+        <p class="image-text" style="color: red;"> Keep liquids and food away from your recycling. <span
+            style="color: white">----------- </span></p>
+      </div>
+
+      <div class="container">
+        <div class="image-container">
+          <img class="image" src="./private/images/recycle3.png" alt="red">
+        </div>
+        <p class="image-text" style="color: red;"> No bagged recyclables or loose plastic bags. <span
+            style="color:white">----------- </span></p>
+      </div>
+
+      <b id="heading3">Non-recyclable items</b> <b></b>
+
+      <ul>
+        <li>no packaging with <b>multimaterials/mixed-plastics</b> </li>
+        <li>no plastic or <b>polystyrene foam packaging</b></li>
+        <li>no cups with <b>plastic or wax coatings</b></li>
+        <li>no <b>plastic wrap/film</b></li>
+      </ul>
+
+
+      <b id="heading4">Recycling </b> <b>Misconceptions</b>
+
+      <ol>
+        <li><b style="color: red;">Containers must be thoroughly cleaned to be recycled.</b></li>
+        <p><b>False.</b> The objective is to clean your recyclables enough where they
+          do not contaminate other materials (i.e. your recycling bin, or paper).
+        </p>
+
+        <li><b style="color: red;">Seperating trash from your recyclables isn't that important.</b></li>
+        <p><b>False.</b> Putting non-recyclable items in your blue bin can cause costly damange to the equipment
+          once it arrives at a recycling center. If you aren't sure what can be recycled or not, check your local
+          recycling center.</p>
+
+        <li><b style="color: red;">I can't recycle my delivery pizza boxes.</b></li>
+        <p><b>It depends.</b>You be the judge; if your pizza box isn't that greasy,
+          and is free from leftovers or liners, it CAN be recycled.
+        </p>
+
+        <li><b style="color: red;">What you recycle must be in good condition</b></li>
+        <p><b>False.</b> Most of your recycled items will be compressed into pellets or melted anyways,
+          so it being in imperfect condition does not really matter.
+          <b>However,</b> broken glass is an exception. Be sure to wrap the boken shards into
+          in a newspaper or place them inside a cardboard box before placing them inside the designated
+          glass recycling bin (grey colored).
+        </p>
+      </ol>
+
+      <b id="heading5">Take-Back Program </b> <b></b>
+      <p>The following items will <b>not</b> be accepted through the City's recycling program, but
+        are still recyclable through a Provincial Take-Back Program. <b>(keep these items away from your garbage)</b>
+      </p>
+
+      <div class="container1">
+        <div class="item1">
+          <img class="image" src="./private/images/take-back1.png">
+        </div>
+
+        <div class="item2">
+          <img class="image" src="./private/images/take-back2.png">
+        </div>
+
+        <div class="item3">
+          <img class="image" src="./private/images/take-back3.png">
+        </div>
+
+        <div class="item4">
+          <img class="image" src="./private/images/take-back4.png">
+        </div>
+
+        <div class="item5">
+          <img class="image" src="./private/images/take-back5.png">
+        </div>
+
+        <div class="item6">
+          <img class="image" src="./private/images/take-back6.png">
+        </div>
+
+        <div class="item7">
+          <img class="image" src="./private/images/take-back7.png">
+        </div>
+
+        <div class="item8">
+          <img class="image" src="./private/images/take-back8.png">
+        </div>
+
+        <div class="item9">
+          <img class="image" src="./private/images/take-back9.png">
+        </div>
+
+      </div>
+
+      <p><b>Find a drop of location by:</b></p>
+      <ol>
+        <li style="color: black">contacting (604-732-9253)</li>
+        <li style="color: black">Visiting BCRecycles.ca</li>
+        <li style="color: black">Visiting metrovancouverrecycles.org</li>
+      </ol>
+
+      <br /><br /><br />
+
+      <b id="heading6"> Don't know what goes</b> <b> where? Use this tool!</b>
+
+      <div style="padding: 5px;">
+        <script>
+          _recollect_config = {
+            area: "Vancouver",
+            name: "wizard"
+          };
+        </script>
+        <script src="https://assets.ca.recollect.net/api/widget.js" charset="UTF-8"></script>
+      </div>
+
+      <div class="footer">
+        <div class="do-the-thing">
+          <div class="elevator" id="toTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+              <path
+                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+      <br /> <br />
+      <p>The information on this page was sourced from </p>
+      <ul>
+        <li><a style="color: black"
+            href="https://www.recyclenow.com/recycling-knowledge/why-recycle#:~:text=Recycling%20helps%20protect%20the%20environment,helps%20to%20tackle%20climate%20change.">
+            www.recyclenow.com</a></li>
+        <li><a style="color: black" href="https://www.wm.com/ca/en/recycle-right/recycling-101">www.wm.com (Waste
+            Management)</a></li>
+        <li><a style="color: black"
+            href="https://www.popularmechanics.com/science/environment/g29740355/recycling-facts/">www.popularmechanics.com</a>
+        </li>
+        <li><a style="color: black"
+            href="https://www.burnaby.ca/City-Services/Garbage---Recycling.html">www.burnaby.ca</a></li>
+      </ul>
+
+      <br /> <br /> <br /> <br /> <br />
+    </div>
+
+  </div>
+
+  <nav class="nav">
+    <a href="./about-us.html" class="navlink">
+      <i class="far fa-smile fa-3x"></i>
+      <span class="navtext">About Us</span>
+    </a>
+    <a href="./landing.html" class="navlink">
+      <i class="fas fa-home fa-3x"></i>
+      <span class="navtext">Home</span>
+    </a>
+    <a href="./quiz.html" class="navlink">
+      <i class="fas fa-question-circle fa-3x"></i>
+      <span class="navtext">Quiz</span>
+    </a>
+  </nav>
+
+  <!----------------------------------------------->
+  <!-- JS: Boostrap, Firebase, API related    -->
+  <!----------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
+
+  <!--------------------------------------------------------------------->
+  <!-- JS files: Your own JavaScript functions included here    -->
+  <!--------------------------------------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./private/js/recycle.js"></script>
+  <script src="/private/js/elevator.js"></script>
+
+  <script>
+    // Simple elevator usage.
+    var elementButton = document.querySelector('.elevator');
+    var elevator = new Elevator({
+      element: elementButton,
+      mainAudio: '/private/music/elevator.mp3', // Music from http://www.bensound.com/
+      endAudio: '/private/music/ding.mp3'
+    });
+  </script>
+</body>
+
+</html>

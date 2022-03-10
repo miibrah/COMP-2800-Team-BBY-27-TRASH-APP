@@ -1,0 +1,56 @@
+#content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+}
+
+#title {
+    grid-area: 1/ 1/ span 1/ span 1;
+    background-color:rgb(103, 148, 54);
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#body {
+    grid-area: 2/ 1/ span 1/ span 1;
+    background-color: white;
+    color: rgb(103, 148, 54);
+}
+
+#body > b {
+    padding: 5px 0 2px 5px;
+    margin: 0px;
+    font-size: 2em;
+}
+
+#body > p {
+    padding: 5px 0 2px 5px;
+    margin: 0px;
+    color: black;
+}
+
+#body > div {
+    padding: 5px 0 2px 5px;
+    margin: 0px;
+    color: black;
+}
+
+.anchor-parent > a {
+    color: white;
+    display: block;
+}
+
+#TOC {
+    color:white;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: white;
+}
+a:hover {
+    color: black;
+}

@@ -1,0 +1,392 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+body {
+	font-family: 'Quicksand', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar span {
+	font-size: 9pt;
+	display: inline-block;
+}
+
+#image_logo {
+  width: 120px;
+  height: auto;
+}
+
+#palette {
+	background: rgb(165,190,0);
+background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100%, rgba(5,102,141,1) 100%);
+}
+
+.nav-bg {
+	background-image: linear-gradient(-45deg, #afb9fe, #71b1bf, #3A4EBD);
+}
+
+.navbar span {
+	color: yellow;
+}
+
+ .nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 75px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      background: rgb(165,190,0);
+      background: linear-gradient(90deg, rgba(165,190,0,1) 17%, rgba(39,159,209,1) 100%, rgba(5,102,141,1) 100%);
+      display: flex;
+      overflow-x: auto;
+  }
+  .navlink {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      width: 50px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: sans-serif;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.1s ease-in-out;
+  }
+  .navlink:hover {
+      background-color: #095024;
+      color:dimgrey;
+  }
+  
+  .navlink.active {
+      color: dimgrey;
+  }
+  
+  .nav_icon {
+      font-size: 30px;
+  }
+  .stars-empty a {
+    color: #313131;
+  }
+
+  .stars-empty a :hover {
+    color:#f1c40f;
+  }
+
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#cart-items-go-here {
+  margin-top: -50px;
+}
+
+/* h1 {
+  margin-top: 10px;
+  color: #84d1df;
+  font-style: italic;
+  font-size: 2em;
+
+}
+
+h2 {
+  margin-top: -40px;
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top:20px;
+} */
+
+.grid {
+	width: auto;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 25em 5em 5em;
+}
+
+#circlebackground {
+	width: 375px;
+	height: 375px;
+	border-radius: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+
+#row3 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/images/trash-img.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#row1 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/private/images/recyc.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#row2 {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(https://bucknellian.net/wp-content/uploads/2017/04/Compost-Color-900x732.png);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.row1_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.hover_recycle {
+  color: white;
+  text-decoration: none;
+}
+
+.hover_recycle:hover {
+  color: rgb(53, 34, 34);
+  text-decoration: none;
+}
+
+.row2_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row3_content {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#back-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#swap-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+
+#reader {
+	min-width: 350px;
+	width: 100%;
+}
+
+#camera-wrapper {
+	margin: auto;
+	width: 50%;
+	min-width: 350px;
+	position: relative;
+}
+
+.popup-box {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+  margin-top: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.listalignment {
+	min-width: 300px;
+	max-width: 650px;
+	margin: 2em auto;
+	font-size: 20pt;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.item-image {
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  height: 30vh;
+  width: auto;
+}
+
+
+
+@media (max-width: 991.98px) { 
+  #row3 {
+    height: 25vh;
+  }
+  #row2 {
+    height: 25vh;
+  }
+  #row1 {
+    height: 25vh;
+  }
+
+  .font-content {
+    font-size: 18px;
+  }
+ }
+
+
+ /** 
+  Credit for share button css and html goes to Larry Geams Parangan.
+  https://freefrontend.com/css-social-share-buttons/
+  *lines 252 - 337.
+ **/
+
+ .share-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  max-height: 68%;
+  max-height: 50px;
+ }
+
+ #share-container {
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+  z-index: 98;
+  padding: 10px;
+}
+
+.share{
+  width: 80px;
+  height: 80px;
+  margin: 5em auto;
+  background: rgb(10, 107, 53);
+  text-align: center;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.share a{
+  display: inline-block;
+  width: 40px;
+  height: 80px;
+  float: left;
+  position: relative;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.share:after{
+  content: "Share";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(10, 107, 53);
+}
+
+.share a.fb{
+  background: #3c5b9b url(https://cdn1.iconfinder.com/data/icons/social-media-icons-2/83/facebook_64x83.png) no-repeat center;
+  top: -200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.share a.tw{
+  background: black url(/private/images/tumblr5.png) no-repeat center;
+  bottom: -200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.share:hover a.fb{
+  top: 0;
+}
+
+.share:hover a.tw{
+  bottom: 0;
+}
